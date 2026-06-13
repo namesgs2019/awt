@@ -1,6 +1,7 @@
 "use client";
 
-import { FormEvent, useEffect, useMemo, useState } from "react";
+import { FormEvent, SyntheticEvent, useEffect, useMemo, useState } from "react";
+import { assetPath } from "@/lib/assetPath";
 
 type InsightKind = "journal" | "resources";
 
@@ -8,6 +9,8 @@ type InsightItem = {
   title?: string;
   summary?: string;
   link?: string;
+  image?: string;
+  thumbnail?: string;
   cafeName?: string;
   cafeUrl?: string;
   postdate?: string;
@@ -22,6 +25,7 @@ type InsightResponse = {
 };
 
 const API_BASE = "https://awt-insights-api.namesgs.workers.dev";
+const FALLBACK_IMAGE = "/images/awt_logo.png";
 
 const config = {
   journal: {
@@ -33,7 +37,7 @@ const config = {
     searchLabel: "Search journal posts",
     searchPlaceholder: "Search journal articles...",
     category: "Journal",
-    image: "/images/solutions/Wastewater-Treatment.png"
+    image: FALLBACK_IMAGE
   },
   resources: {
     tag: "[AWT_Resources]",
@@ -44,7 +48,7 @@ const config = {
     searchLabel: "Search resources",
     searchPlaceholder: "Search resources...",
     category: "Resource",
-    image: "/images/ecm-process-diagram.png"
+    image: FALLBACK_IMAGE
   }
 } satisfies Record<InsightKind, {
   tag: string;
@@ -71,6 +75,17 @@ function formatPostDate(value: string | undefined) {
   }
 
   return `${value.slice(0, 4)}.${value.slice(4, 6)}.${value.slice(6, 8)}`;
+}
+
+function getItemImage(item: InsightItem, fallback: string) {
+  return item.image || item.thumbnail || fallback;
+}
+
+function handleImageFallback(event: SyntheticEvent<HTMLImageElement>) {
+  const fallbackSrc = assetPath(FALLBACK_IMAGE);
+  if (event.currentTarget.src !== fallbackSrc) {
+    event.currentTarget.src = fallbackSrc;
+  }
 }
 
 export function InsightsList({ kind }: { kind: InsightKind }) {
@@ -184,11 +199,12 @@ export function InsightsList({ kind }: { kind: InsightKind }) {
           const date = formatPostDate(item.postdate);
           const displayDate = date || "Date not provided";
           const key = `${item.link || title}-${index}`;
+          const imageSrc = assetPath(getItemImage(item, options.image));
 
           return (
             <article className="insight-card" key={key}>
               <button className="insight-card-main" type="button" onClick={() => setSelectedItem(item)}>
-                <img src={options.image} alt="" />
+                <img src={imageSrc} alt="" onError={handleImageFallback} />
                 <div>
                   <h2>{title}</h2>
                   <p>{item.summary || "Technical insight from Advanced Water Technology."}</p>
@@ -223,7 +239,12 @@ export function InsightsList({ kind }: { kind: InsightKind }) {
               <span>{formatPostDate(selectedItem.postdate) || "Date not provided"}</span>
               <span>{options.category}</span>
             </div>
-            <img className="insight-modal-image" src={options.image} alt="" />
+            <img
+              className="insight-modal-image"
+              src={assetPath(getItemImage(selectedItem, options.image))}
+              alt=""
+              onError={handleImageFallback}
+            />
             <p>{selectedItem.summary || "Technical insight from Advanced Water Technology."}</p>
             {selectedItem.link ? (
               <a className="insight-original-link" href={selectedItem.link} target="_blank" rel="noreferrer">

@@ -799,8 +799,9 @@ h1 {
   width: 100%;
   aspect-ratio: 4 / 3;
   border-radius: 6px;
-  object-fit: cover;
+  object-fit: contain;
   background: #e8f2f8;
+  padding: 12px;
 }
 
 .insight-card h2 {
@@ -906,8 +907,9 @@ h1 {
   max-height: 260px;
   margin: 22px 0;
   border-radius: 8px;
-  object-fit: cover;
+  object-fit: contain;
   background: #e8f2f8;
+  padding: 16px;
 }
 
 .insight-modal p {
