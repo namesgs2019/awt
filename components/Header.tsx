@@ -7,7 +7,7 @@ import { Logo } from "@/components/Logo";
 import { dropdownItems, type DropdownKey } from "@/data/navigation";
 import { navItems } from "@/data/site";
 
-const dropdownKeys = new Set(["solutions", "projects", "partnership"]);
+const dropdownKeys = new Set(["solutions", "projects", "insights", "partnership"]);
 
 export function Header() {
   const [open, setOpen] = useState(false);

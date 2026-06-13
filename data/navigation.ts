@@ -15,6 +15,10 @@ export const dropdownItems = {
       status: "available"
     }
   ],
+  insights: [
+    { label: "Journal", href: "/insights/journal", status: "available" },
+    { label: "Resources", href: "/insights/resources", status: "available" }
+  ],
   partnership: [
     { label: "Impact Investors", href: "/partnership#impact-investors", status: "available" },
     { label: "EPC & Engineering", href: "/partnership#epc-engineering", status: "available" },
