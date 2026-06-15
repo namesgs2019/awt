@@ -5,6 +5,7 @@ export const navItems = [
   { key: "pilots", label: "Pilots & Applications", href: "/pilots" },
   { key: "materials", label: "Materials", href: "/materials" },
   { key: "team", label: "Team", href: "/team" },
+  { key: "partnership", label: "Partnership", href: "/partnership" },
   { key: "insights", label: "Insights", href: "/insights" },
   { key: "contact", label: "Contact", href: "/contact" }
 ] as const;
