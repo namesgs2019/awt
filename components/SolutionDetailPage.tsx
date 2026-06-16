@@ -13,7 +13,7 @@ export function SolutionDetailPage({ slug }: { slug: SolutionSlug }) {
 
   return (
     <>
-      <section className="page-hero solutions-hero">
+      <section className="page-hero solutions-hero hero-bg-solutions">
         <p>Solutions</p>
         <h1>{solution.title}</h1>
         <p>{solution.intro}</p>

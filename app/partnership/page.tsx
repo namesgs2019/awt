@@ -26,7 +26,7 @@ export default function PartnershipPage() {
 
   return (
     <>
-      <section className="page-hero">
+      <section className="page-hero hero-bg-partnership">
         <p>Partnership</p>
         <h1>Partnership & Investors</h1>
         <p>AWT partners with investors, EPC firms, public-sector organizations, and licensing partners to scale ECM water infrastructure.</p>

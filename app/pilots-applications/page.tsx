@@ -6,7 +6,7 @@ import { industrialPilotKeywords, pilots } from "@/data/pilots";
 
 const pilotIds = ["ministry-verification", "hospital-wastewater", "phosphorus-water-reuse", "surface-water-purification"];
 
-export default function PilotsPage() {
+export default function PilotsApplicationsPage() {
   return (
     <>
       <section className="page-hero hero-bg-pilots">

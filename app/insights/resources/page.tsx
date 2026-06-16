@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 export default function ResourcesPage() {
   return (
     <>
-      <section className="page-hero insights-list-hero">
+      <section className="page-hero insights-list-hero hero-bg-insights">
         <p>Insights</p>
         <h1>Resources</h1>
         <p>Technical materials and useful resources from AWT.</p>

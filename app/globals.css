@@ -1094,6 +1094,117 @@ h1 {
     var(--white);
 }
 
+.hero-bg-ecm,
+.hero-bg-solutions,
+.hero-bg-projects,
+.hero-bg-pilots,
+.hero-bg-materials,
+.hero-bg-team,
+.hero-bg-partnership,
+.hero-bg-insights,
+.hero-bg-contact {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+  background-color: #051223;
+  background-position: center;
+  background-size: cover;
+}
+
+.hero-bg-ecm::before,
+.hero-bg-solutions::before,
+.hero-bg-projects::before,
+.hero-bg-pilots::before,
+.hero-bg-materials::before,
+.hero-bg-team::before,
+.hero-bg-partnership::before,
+.hero-bg-insights::before,
+.hero-bg-contact::before {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: linear-gradient(
+    90deg,
+    rgba(5, 18, 35, 0.78) 0%,
+    rgba(5, 18, 35, 0.45) 54%,
+    rgba(5, 18, 35, 0.15) 100%
+  );
+  content: "";
+}
+
+.hero-bg-ecm {
+  background-image: url("/images/hero1_bgimg_ECM%20Technology.png");
+}
+
+.hero-bg-solutions {
+  background-image: url("/images/hero2_bgimg_Solutions.png");
+}
+
+.hero-bg-projects {
+  background-image: url("/images/hero3_bgimg_Project.png");
+}
+
+.hero-bg-pilots {
+  background-image: url("/images/hero4_bgimg_Pilot.png");
+}
+
+.hero-bg-materials {
+  background-image: url("/images/hero5_bgimg_Materials.png");
+}
+
+.hero-bg-team {
+  background-image: url("/images/hero6_bgimg_Team.png");
+}
+
+.hero-bg-partnership {
+  background-image: url("/images/hero7_bgimg_Partnership.png");
+}
+
+.hero-bg-insights {
+  background-image: url("/images/hero8_bgimg_Insights.png");
+}
+
+.hero-bg-contact {
+  background-image: url("/images/hero9_bgimg_Contact.png");
+}
+
+.hero-bg-ecm h1,
+.hero-bg-solutions h1,
+.hero-bg-projects h1,
+.hero-bg-pilots h1,
+.hero-bg-materials h1,
+.hero-bg-team h1,
+.hero-bg-partnership h1,
+.hero-bg-insights h1,
+.hero-bg-contact h1 {
+  color: #ffffff;
+  text-shadow: 0 18px 42px rgba(0, 0, 0, 0.28);
+}
+
+.hero-bg-ecm p,
+.hero-bg-solutions p,
+.hero-bg-projects p,
+.hero-bg-pilots p,
+.hero-bg-materials p,
+.hero-bg-team p,
+.hero-bg-partnership p,
+.hero-bg-insights p,
+.hero-bg-contact p {
+  color: rgba(241, 245, 249, 0.88);
+}
+
+.hero-bg-ecm > p:first-child,
+.hero-bg-solutions > p:first-child,
+.hero-bg-projects > p:first-child,
+.hero-bg-pilots > p:first-child,
+.hero-bg-materials > p:first-child,
+.hero-bg-team > p:first-child,
+.hero-bg-partnership > p:first-child,
+.hero-bg-insights > p:first-child,
+.hero-bg-contact > p:first-child {
+  color: #62d7ee;
+}
+
 .process {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -2782,6 +2893,23 @@ textarea {
 }
 
 @media (max-width: 640px) {
+  .hero-bg-ecm::before,
+  .hero-bg-solutions::before,
+  .hero-bg-projects::before,
+  .hero-bg-pilots::before,
+  .hero-bg-materials::before,
+  .hero-bg-team::before,
+  .hero-bg-partnership::before,
+  .hero-bg-insights::before,
+  .hero-bg-contact::before {
+    background: linear-gradient(
+      90deg,
+      rgba(5, 18, 35, 0.88) 0%,
+      rgba(5, 18, 35, 0.68) 60%,
+      rgba(5, 18, 35, 0.42) 100%
+    );
+  }
+
   .about-band {
     padding-bottom: 64px;
   }

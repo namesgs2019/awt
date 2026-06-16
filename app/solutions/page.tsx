@@ -6,7 +6,7 @@ import { solutionPages } from "@/data/solutionPages";
 export default function SolutionsPage() {
   return (
     <>
-      <section className="page-hero solutions-hero">
+      <section className="page-hero solutions-hero hero-bg-solutions">
         <p>Solutions</p>
         <h1>ECM Solutions by Application</h1>
         <p>AWT organizes water infrastructure into five application categories so partners can quickly identify the right ECM pathway.</p>

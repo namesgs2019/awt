@@ -27,7 +27,7 @@ function ProjectPipeline({ title, rows }: { title: string; rows: string[][] }) {
 export default function ProjectsPage() {
   return (
     <>
-      <section className="page-hero">
+      <section className="page-hero hero-bg-projects">
         <p>Projects</p>
         <h1>Project Pipeline</h1>
         <p>AWT organizes its active pipeline by global outreach and domestic under-discussion opportunities.</p>

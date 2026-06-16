@@ -10,7 +10,7 @@ const materialIcons = ["layers", "atom", "zap", "cpu"];
 export default function MaterialsPage() {
   return (
     <>
-      <section className="page-hero materials-hero">
+      <section className="page-hero materials-hero hero-bg-materials">
         <p>Materials</p>
         <h1>Ceramic Membranes, Electrodes, and Composite Filtration Materials</h1>
         <p>AWT develops core materials, components, and modules that support ECM water treatment systems.</p>

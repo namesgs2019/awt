@@ -7,7 +7,7 @@ export function ProjectDetailClient({ slug }: { slug: string }) {
 
   if (!sourceProject) {
     return (
-      <section className="page-hero">
+      <section className="page-hero hero-bg-projects">
         <p>Projects</p>
         <h1>Project not found</h1>
       </section>
@@ -16,7 +16,7 @@ export function ProjectDetailClient({ slug }: { slug: string }) {
 
   return (
     <>
-      <section className="page-hero">
+      <section className="page-hero hero-bg-projects">
         <p>Projects</p>
         <h1>{sourceProject.title}</h1>
         {sourceProject.status ? <span className="status-badge project-status-badge">{sourceProject.status}</span> : null}

@@ -30,7 +30,7 @@ const visualEvidence = [
 export default function ECMTechnologyPage() {
   return (
     <>
-      <section className="page-hero">
+      <section className="page-hero hero-bg-ecm">
         <p>ECM Technology</p>
         <h1>Electrocoagulation + Ceramic Membrane</h1>
         <p>AWT's core technology platform for chemical-free water purification, reuse, and advanced pretreatment.</p>

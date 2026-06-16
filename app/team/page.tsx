@@ -7,7 +7,7 @@ export default function TeamPage() {
 
   return (
     <>
-      <section className="page-hero">
+      <section className="page-hero hero-bg-team">
         <p>Team</p>
         <h1>Leadership Team</h1>
         <p>Technology invention, engineering execution, finance, and global project development in one focused team.</p>
