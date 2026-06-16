@@ -4,13 +4,13 @@ const BLOGGER_API_BASE = "https://www.googleapis.com/blogger/v3/blogs";
 const JOURNAL_LABELS = ["journal", "Journal"];
 const RESOURCE_LABELS = ["resources", "Resources"];
 const JOURNAL_PREFIX_PATTERN = /^\s*\[(?:journal|resources?|awt_journal|awt_resources?)\]\s*/i;
-const FALLBACK_ERROR_MESSAGE = "\uCD5C\uC2E0 \uAC8C\uC2DC\uAE00 \uD655\uC778\uC774 \uC7A0\uC2DC \uC9C0\uC5F0\uB418\uACE0 \uC788\uC2B5\uB2C8\uB2E4. \uAE30\uC874 \uAC8C\uC2DC\uAE00\uC740 \uC815\uC0C1\uC801\uC73C\uB85C \uC5F4\uB78C\uD560 \uC218 \uC788\uC2B5\uB2C8\uB2E4.";
+const FALLBACK_ERROR_MESSAGE = "Journal updates are temporarily delayed. Existing posts remain available.";
 const RESOURCES_FALLBACK_MESSAGE = "Resources are being updated. Please check back soon.";
 
 function getBloggerConfig() {
   return {
-    blogId: process.env.NEXT_PUBLIC_BLOGGER_BLOG_ID,
-    apiKey: process.env.NEXT_PUBLIC_BLOGGER_API_KEY
+    blogId: process.env.BLOGGER_BLOG_ID ?? process.env.NEXT_PUBLIC_BLOGGER_BLOG_ID,
+    apiKey: process.env.BLOGGER_API_KEY ?? process.env.NEXT_PUBLIC_BLOGGER_API_KEY
   };
 }
 
