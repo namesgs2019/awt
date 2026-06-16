@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
-import { InsightsList } from "@/components/InsightsList";
+import { BloggerResourcesList } from "@/components/BloggerResourcesList";
+import { getBloggerResourcePosts, RESOURCES_FALLBACK_MESSAGE } from "@/lib/blogger";
 
 export const metadata: Metadata = {
   title: "Resources | AWT Insights",
@@ -9,7 +10,19 @@ export const metadata: Metadata = {
   }
 };
 
-export default function ResourcesPage() {
+export default async function ResourcesPage() {
+  const posts = await getBloggerResourcePosts();
+  const listPosts = posts.map(({ id, slug, displayTitle, excerpt, published, labels, thumbnail, downloadLinks }) => ({
+    id,
+    slug,
+    displayTitle,
+    excerpt,
+    published,
+    labels,
+    thumbnail,
+    downloadLinks
+  }));
+
   return (
     <>
       <section className="page-hero insights-list-hero hero-bg-insights">
@@ -19,7 +32,13 @@ export default function ResourcesPage() {
       </section>
 
       <section className="band soft">
-        <InsightsList kind="resources" />
+        {posts.length === 0 ? (
+          <div className="insights-browser">
+            <p className="insights-state">{RESOURCES_FALLBACK_MESSAGE}</p>
+          </div>
+        ) : (
+          <BloggerResourcesList posts={listPosts} />
+        )}
       </section>
     </>
   );

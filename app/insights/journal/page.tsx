@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
-import { InsightsList } from "@/components/InsightsList";
+import { BloggerJournalList } from "@/components/BloggerJournalList";
+import { FALLBACK_ERROR_MESSAGE, getBloggerPosts } from "@/lib/blogger";
 
 export const metadata: Metadata = {
   title: "Journal | AWT Insights",
@@ -9,7 +10,18 @@ export const metadata: Metadata = {
   }
 };
 
-export default function JournalPage() {
+export default async function JournalPage() {
+  const posts = await getBloggerPosts();
+  const listPosts = posts.map(({ id, slug, displayTitle, excerpt, published, labels, thumbnail }) => ({
+    id,
+    slug,
+    displayTitle,
+    excerpt,
+    published,
+    labels,
+    thumbnail
+  }));
+
   return (
     <>
       <section className="page-hero insights-list-hero hero-bg-insights">
@@ -19,7 +31,13 @@ export default function JournalPage() {
       </section>
 
       <section className="band soft">
-        <InsightsList kind="journal" />
+        {posts.length === 0 ? (
+          <div className="insights-browser">
+            <p className="insights-state">{FALLBACK_ERROR_MESSAGE}</p>
+          </div>
+        ) : (
+          <BloggerJournalList posts={listPosts} />
+        )}
       </section>
     </>
   );

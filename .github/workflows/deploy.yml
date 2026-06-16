@@ -37,6 +37,8 @@ jobs:
       - name: Build static site
         env:
           NEXT_PUBLIC_FORMSPREE_ENDPOINT: ${{ secrets.NEXT_PUBLIC_FORMSPREE_ENDPOINT }}
+          NEXT_PUBLIC_BLOGGER_BLOG_ID: ${{ secrets.NEXT_PUBLIC_BLOGGER_BLOG_ID }}
+          NEXT_PUBLIC_BLOGGER_API_KEY: ${{ secrets.NEXT_PUBLIC_BLOGGER_API_KEY }}
         run: npm run build
 
       - name: Upload Pages artifact

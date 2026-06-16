@@ -42,8 +42,8 @@ const config = {
   resources: {
     tag: "[AWT_Resources]",
     endpoint: "resources",
-    empty: "No resources found.",
-    error: "Unable to load resources. Please try again later.",
+    empty: "Resources are being updated. Please check back soon.",
+    error: "Resources are being updated. Please check back soon.",
     button: "View Resource",
     searchLabel: "Search resources",
     searchPlaceholder: "Search resources...",
@@ -190,7 +190,7 @@ export function InsightsList({ kind }: { kind: InsightKind }) {
       </form>
 
       {loading ? <p className="insights-state">Loading...</p> : null}
-      {error ? <p className="insights-state error">{error}</p> : null}
+      {error ? <p className={kind === "resources" ? "insights-state" : "insights-state error"}>{error}</p> : null}
       {!loading && !error && items.length === 0 ? <p className="insights-state">{options.empty}</p> : null}
 
       <div className="insights-list">
