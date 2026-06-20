@@ -75,9 +75,6 @@ export function BloggerResourcesList({ posts }: { posts: ResourceListPost[] }) {
                 </div>
               </div>
             </Link>
-            <Link className="insight-card-action" href={`/insights/resources/${post.slug}/`}>
-              View Resource
-            </Link>
           </article>
         ))}
       </div>

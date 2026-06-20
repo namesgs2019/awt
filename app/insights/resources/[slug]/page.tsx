@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { ShareMenu } from "@/components/ShareMenu";
 import { formatBloggerDate, getBloggerResourceBySlug, getBloggerResourcePosts, RESOURCES_FALLBACK_MESSAGE } from "@/lib/blogger";
 
 type ResourceDetailPageProps = {
@@ -88,7 +89,10 @@ export default async function ResourceDetailPage({ params }: ResourceDetailPageP
             <span>Resource</span>
           </div>
 
-          <h2 className="blogger-detail-title">{post.displayTitle}</h2>
+          <div className="blogger-title-row">
+            <h2 className="blogger-detail-title">{post.displayTitle}</h2>
+            <ShareMenu title={post.displayTitle} />
+          </div>
 
           <div
             className="blogger-content"

@@ -74,9 +74,6 @@ export function BloggerJournalList({ posts }: { posts: JournalListPost[] }) {
                 </div>
               </div>
             </Link>
-            <Link className="insight-card-action" href={`/insights/journal/${post.slug}/`}>
-              Read More
-            </Link>
           </article>
         ))}
       </div>
