@@ -5,6 +5,8 @@ import Link from "next/link";
 import { formatBloggerDate } from "@/lib/blogger";
 import type { NormalizedBloggerPost } from "@/types/blogger";
 
+const POSTS_PER_PAGE = 10;
+
 export type ResourceListPost = Pick<
   NormalizedBloggerPost,
   "id" | "slug" | "displayTitle" | "excerpt" | "published" | "labels" | "thumbnail" | "downloadLinks"
@@ -28,15 +30,19 @@ function matchesQuery(post: ResourceListPost, query: string) {
 export function BloggerResourcesList({ posts }: { posts: ResourceListPost[] }) {
   const [query, setQuery] = useState("");
   const [activeQuery, setActiveQuery] = useState("");
+  const [visibleCount, setVisibleCount] = useState(POSTS_PER_PAGE);
 
   const filteredPosts = useMemo(
     () => posts.filter((post) => matchesQuery(post, activeQuery)),
     [activeQuery, posts]
   );
+  const displayedPosts = filteredPosts.slice(0, visibleCount);
+  const hasMorePosts = visibleCount < filteredPosts.length;
 
   function handleSearch(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
     setActiveQuery(query);
+    setVisibleCount(POSTS_PER_PAGE);
   }
 
   return (
@@ -48,7 +54,10 @@ export function BloggerResourcesList({ posts }: { posts: ResourceListPost[] }) {
             type="search"
             value={query}
             placeholder="Search resources..."
-            onChange={(event) => setQuery(event.target.value)}
+            onChange={(event) => {
+              setQuery(event.target.value);
+              setVisibleCount(POSTS_PER_PAGE);
+            }}
           />
         </label>
         <button type="submit">Search</button>
@@ -57,7 +66,7 @@ export function BloggerResourcesList({ posts }: { posts: ResourceListPost[] }) {
       {filteredPosts.length === 0 ? <p className="insights-state">Resources are being updated. Please check back soon.</p> : null}
 
       <div className="insights-list">
-        {filteredPosts.map((post) => (
+        {displayedPosts.map((post) => (
           <article className="insight-card blogger-resource-card" key={post.id}>
             <Link className="insight-card-main" href={`/insights/resources/${post.slug}/`}>
               {post.thumbnail ? (
@@ -78,6 +87,12 @@ export function BloggerResourcesList({ posts }: { posts: ResourceListPost[] }) {
           </article>
         ))}
       </div>
+
+      {hasMorePosts ? (
+        <button className="load-more-button" type="button" onClick={() => setVisibleCount((count) => count + POSTS_PER_PAGE)}>
+          More
+        </button>
+      ) : null}
     </div>
   );
 }

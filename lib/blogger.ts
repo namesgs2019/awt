@@ -158,7 +158,7 @@ async function fetchBloggerPostsByLabel(label: string) {
     fetchBodies: "true",
     fetchImages: "true",
     orderBy: "published",
-    maxResults: "20"
+    maxResults: "50"
   });
   const requestUrl = `${BLOGGER_API_BASE}/${encodeURIComponent(blogId)}/posts?${params.toString()}`;
 
