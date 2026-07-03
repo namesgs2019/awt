@@ -1,4 +1,10 @@
-export type SolutionSlug = "tap-water" | "sewage-treatment" | "industrial-wastewater" | "water-reuse" | "desalination";
+export type SolutionSlug =
+  | "tap-water"
+  | "sewage-treatment"
+  | "industrial-wastewater"
+  | "water-reuse"
+  | "desalination"
+  | "pool-spa";
 
 export type SolutionPageData = {
   slug: SolutionSlug;
@@ -73,6 +79,14 @@ export const solutionPages: SolutionPageData[] = [
       body:
         "AWT applies ECM pretreatment and ceramic membrane filtration concepts to improve feedwater quality for high-salinity desalination and brine-oriented treatment applications."
     }
+  },
+  {
+    slug: "pool-spa",
+    title: "Pool & Spa",
+    summary: "Chemical-free pool and spa water purification powered by compact ECM Mini systems.",
+    points: ["Private Pool", "Lap & Fitness Pool", "Resort & Spa", "ECM Mini"],
+    intro:
+      "Chemical-free pool and spa water purification for private residences, indoor facilities, and resort-scale applications — powered by ECM Mini. No chlorine, no plastics, and zero water discharged through continuous closed-loop recirculation."
   }
 ];
 

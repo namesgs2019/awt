@@ -11,5 +11,6 @@ yarn-error.log*
 pnpm-debug.log*
 dev-server*.log
 dist
+build
 docs
 *.pdf

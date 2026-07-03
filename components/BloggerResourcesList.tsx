@@ -90,7 +90,7 @@ export function BloggerResourcesList({ posts }: { posts: ResourceListPost[] }) {
 
       {hasMorePosts ? (
         <button className="load-more-button" type="button" onClick={() => setVisibleCount((count) => count + POSTS_PER_PAGE)}>
-          More
+          MORE ▼
         </button>
       ) : null}
     </div>

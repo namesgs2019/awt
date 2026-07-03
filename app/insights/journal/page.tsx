@@ -6,7 +6,21 @@ export const metadata: Metadata = {
   title: "Journal | AWT Insights",
   description: "Latest technical articles and research from AWT on water treatment, ECM technology, water reuse, and ceramic membrane solutions.",
   alternates: {
-    canonical: "/insights/journal"
+    canonical: "/insights/journal/"
+  },
+  openGraph: {
+    title: "Journal | AWT Insights",
+    description:
+      "Latest technical articles and research from AWT on water treatment, ECM technology, water reuse, and ceramic membrane solutions.",
+    url: "https://adwatertech.com/insights/journal/",
+    images: ["https://adwatertech.com/images/awt_open_graph_Open_img.png"]
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Journal | AWT Insights",
+    description:
+      "Latest technical articles and research from AWT on water treatment, ECM technology, water reuse, and ceramic membrane solutions.",
+    images: ["https://adwatertech.com/images/awt_open_graph_Open_img.png"]
   }
 };
 

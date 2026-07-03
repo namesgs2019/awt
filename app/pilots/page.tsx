@@ -1,8 +1,38 @@
-"use client";
-
+import type { Metadata } from "next";
 import { DataTable } from "@/components/DataTable";
 import { SectionTitle } from "@/components/SectionTitle";
 import { industrialPilotKeywords, pilots } from "@/data/pilots";
+
+export const metadata: Metadata = {
+  title: "Pilots & Applications | AWT Verification Data",
+  description:
+    "Explore AWT pilot verification data, field application records, and measured performance results for ECM water treatment technologies.",
+  keywords: [
+    "AWT pilots",
+    "ECM pilot data",
+    "water treatment verification",
+    "wastewater treatment pilot",
+    "phosphorus removal pilot",
+    "surface water purification"
+  ],
+  alternates: {
+    canonical: "/pilots/"
+  },
+  openGraph: {
+    title: "Pilots & Applications | AWT",
+    description:
+      "AWT pilot records and verification data for ECM water treatment, wastewater treatment, phosphorus removal, and water purification applications.",
+    url: "https://adwatertech.com/pilots/",
+    images: ["https://adwatertech.com/images/awt_open_graph_Open_img.png"]
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Pilots & Applications | AWT",
+    description:
+      "AWT pilot records and verification data for ECM water treatment, wastewater treatment, phosphorus removal, and water purification applications.",
+    images: ["https://adwatertech.com/images/awt_open_graph_Open_img.png"]
+  }
+};
 
 const pilotIds = ["ministry-verification", "hospital-wastewater", "phosphorus-water-reuse", "surface-water-purification"];
 

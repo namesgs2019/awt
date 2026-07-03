@@ -1,7 +1,37 @@
-"use client";
-
+import type { Metadata } from "next";
 import { SectionTitle } from "@/components/SectionTitle";
 import { v2Projects } from "@/data/v2";
+
+export const metadata: Metadata = {
+  title: "Projects | AWT Global and Domestic Water Infrastructure",
+  description:
+    "Review AWT's global and domestic project pipeline for ECM water treatment, wastewater reuse, desalination, and decentralized water infrastructure.",
+  keywords: [
+    "AWT projects",
+    "water infrastructure",
+    "ECM water treatment projects",
+    "wastewater reuse",
+    "desalination projects",
+    "decentralized sewage treatment"
+  ],
+  alternates: {
+    canonical: "/projects/"
+  },
+  openGraph: {
+    title: "Projects | AWT",
+    description:
+      "AWT's project pipeline covers global and domestic applications for ECM water treatment, reuse, desalination, and decentralized infrastructure.",
+    url: "https://adwatertech.com/projects/",
+    images: ["https://adwatertech.com/images/awt_open_graph_Open_img.png"]
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Projects | AWT",
+    description:
+      "AWT's project pipeline covers global and domestic applications for ECM water treatment, reuse, desalination, and decentralized infrastructure.",
+    images: ["https://adwatertech.com/images/awt_open_graph_Open_img.png"]
+  }
+};
 
 function ProjectPipeline({ title, rows }: { title: string; rows: string[][] }) {
   return (

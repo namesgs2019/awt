@@ -89,7 +89,7 @@ export function BloggerJournalList({ posts }: { posts: JournalListPost[] }) {
 
       {hasMorePosts ? (
         <button className="load-more-button" type="button" onClick={() => setVisibleCount((count) => count + POSTS_PER_PAGE)}>
-          More
+          MORE ▼
         </button>
       ) : null}
     </div>

@@ -1,8 +1,39 @@
-"use client";
-
+import type { Metadata } from "next";
 import Image from "next/image";
 import { SectionTitle } from "@/components/SectionTitle";
 import { assetPath } from "@/lib/assetPath";
+
+export const metadata: Metadata = {
+  title: "ECM Technology | AWT",
+  description:
+    "Explore AWT's ECM technology platform combining electrocoagulation, ceramic membrane filtration, water reuse optimization, and AI-based autonomous operation.",
+  keywords: [
+    "ECM technology",
+    "electrocoagulation",
+    "ceramic membrane filtration",
+    "chemical-free water treatment",
+    "water reuse optimization",
+    "AI water treatment",
+    "AWT"
+  ],
+  alternates: {
+    canonical: "/ecm-technology/"
+  },
+  openGraph: {
+    title: "ECM Technology | AWT",
+    description:
+      "AWT's ECM technology combines electrocoagulation and ceramic membrane filtration for chemical-free water purification and reuse.",
+    url: "https://adwatertech.com/ecm-technology/",
+    images: ["https://adwatertech.com/images/awt_open_graph_Open_img.png"]
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "ECM Technology | AWT",
+    description:
+      "AWT's ECM technology combines electrocoagulation and ceramic membrane filtration for chemical-free water purification and reuse.",
+    images: ["https://adwatertech.com/images/awt_open_graph_Open_img.png"]
+  }
+};
 
 const ecmSections = [
   ["What is ECM", "ECM combines electrocoagulation and ceramic membrane filtration to purify and reuse water without relying on chemical coagulants or disposable plastic membranes."],

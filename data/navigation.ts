@@ -4,7 +4,8 @@ export const dropdownItems = {
     { label: "Sewage Treatment", href: "/solutions/sewage-treatment", status: "available" },
     { label: "Industrial Wastewater", href: "/solutions/industrial-wastewater", status: "available" },
     { label: "Water Reuse", href: "/solutions/water-reuse", status: "available" },
-    { label: "Desalination", href: "/solutions/desalination", status: "available" }
+    { label: "Desalination", href: "/solutions/desalination", status: "available" },
+    { label: "Pool & Spa", href: "/solutions/pool-spa", status: "available" }
   ],
   projects: [
     { label: "Global", href: "/projects#global", status: "available" },

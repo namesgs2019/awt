@@ -6,7 +6,19 @@ export const metadata: Metadata = {
   title: "Resources | AWT Insights",
   description: "Technical materials, references, and resources from AWT.",
   alternates: {
-    canonical: "/insights/resources"
+    canonical: "/insights/resources/"
+  },
+  openGraph: {
+    title: "Resources | AWT Insights",
+    description: "Technical materials, references, and resources from AWT.",
+    url: "https://adwatertech.com/insights/resources/",
+    images: ["https://adwatertech.com/images/awt_open_graph_Open_img.png"]
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Resources | AWT Insights",
+    description: "Technical materials, references, and resources from AWT.",
+    images: ["https://adwatertech.com/images/awt_open_graph_Open_img.png"]
   }
 };
 

@@ -43,6 +43,7 @@ export function HomePageClient() {
         <Image src={assetPath("/images/awt-hero-water-technology.png")} alt="Advanced water treatment facility" fill priority />
         <div className="hero-overlay" />
         <div className="hero-content">
+          <h1 className="sr-only">Advanced Water Technology for Chemical-free Water Treatment</h1>
           <p>Advanced Water Technology</p>
           <strong className="hero-highlight">{heroHighlight}</strong>
           {heroIntro.map((paragraph) => (
