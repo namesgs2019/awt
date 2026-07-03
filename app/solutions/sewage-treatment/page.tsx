@@ -23,14 +23,14 @@ export const metadata: Metadata = {
     description:
       "ECM-based sewage treatment for municipal, decentralized, hospital, and pilot-scale water infrastructure.",
     url: "https://adwatertech.com/solutions/sewage-treatment/",
-    images: ["https://adwatertech.com/images/awt_open_graph_Open_img.png"]
+    images: ["https://adwatertech.com/images/awt_logo.png"]
   },
   twitter: {
     card: "summary_large_image",
     title: "Sewage Treatment | AWT",
     description:
       "ECM-based sewage treatment for municipal, decentralized, hospital, and pilot-scale water infrastructure.",
-    images: ["https://adwatertech.com/images/awt_open_graph_Open_img.png"]
+    images: ["https://adwatertech.com/images/awt_logo.png"]
   }
 };
 

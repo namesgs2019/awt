@@ -23,14 +23,14 @@ export const metadata: Metadata = {
     description:
       "AWT pilot records and verification data for ECM water treatment, wastewater treatment, phosphorus removal, and water purification applications.",
     url: "https://adwatertech.com/pilots/",
-    images: ["https://adwatertech.com/images/awt_open_graph_Open_img.png"]
+    images: ["https://adwatertech.com/images/awt_logo.png"]
   },
   twitter: {
     card: "summary_large_image",
     title: "Pilots & Applications | AWT",
     description:
       "AWT pilot records and verification data for ECM water treatment, wastewater treatment, phosphorus removal, and water purification applications.",
-    images: ["https://adwatertech.com/images/awt_open_graph_Open_img.png"]
+    images: ["https://adwatertech.com/images/awt_logo.png"]
   }
 };
 

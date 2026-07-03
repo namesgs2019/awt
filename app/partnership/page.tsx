@@ -22,14 +22,14 @@ export const metadata: Metadata = {
     description:
       "AWT partners with investors, EPC firms, municipalities, and licensing partners to scale ECM water infrastructure.",
     url: "https://adwatertech.com/partnership/",
-    images: ["https://adwatertech.com/images/awt_open_graph_Open_img.png"]
+    images: ["https://adwatertech.com/images/awt_logo.png"]
   },
   twitter: {
     card: "summary_large_image",
     title: "Partnership & Investors | AWT",
     description:
       "AWT partners with investors, EPC firms, municipalities, and licensing partners to scale ECM water infrastructure.",
-    images: ["https://adwatertech.com/images/awt_open_graph_Open_img.png"]
+    images: ["https://adwatertech.com/images/awt_logo.png"]
   }
 };
 

@@ -26,14 +26,14 @@ export const metadata: Metadata = {
     description:
       "AWT develops ceramic membranes, electrodes, and composite filtration materials for ECM water treatment systems.",
     url: "https://adwatertech.com/materials/",
-    images: ["https://adwatertech.com/images/awt_open_graph_Open_img.png"]
+    images: ["https://adwatertech.com/images/awt_logo.png"]
   },
   twitter: {
     card: "summary_large_image",
     title: "Materials | AWT",
     description:
       "AWT develops ceramic membranes, electrodes, and composite filtration materials for ECM water treatment systems.",
-    images: ["https://adwatertech.com/images/awt_open_graph_Open_img.png"]
+    images: ["https://adwatertech.com/images/awt_logo.png"]
   }
 };
 

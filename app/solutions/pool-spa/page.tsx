@@ -26,14 +26,14 @@ export const metadata: Metadata = {
     description:
       "Chemical-free pool and spa water purification powered by ECM Mini, combining electrocoagulation, ceramic membrane filtration, and closed-loop recirculation.",
     url: "https://adwatertech.com/solutions/pool-spa/",
-    images: ["https://adwatertech.com/images/awt_open_graph_Open_img.png"]
+    images: ["https://adwatertech.com/images/awt_logo.png"]
   },
   twitter: {
     card: "summary_large_image",
     title: "Pool & Spa Water Purification | AWT",
     description:
       "Chemical-free pool and spa water purification powered by ECM Mini, combining electrocoagulation, ceramic membrane filtration, and closed-loop recirculation.",
-    images: ["https://adwatertech.com/images/awt_open_graph_Open_img.png"]
+    images: ["https://adwatertech.com/images/awt_logo.png"]
   }
 };
 

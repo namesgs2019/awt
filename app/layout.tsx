@@ -24,6 +24,10 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "/"
   },
+  icons: {
+    icon: "/favicon.ico",
+    shortcut: "/favicon.ico"
+  },
   openGraph: {
     type: "website",
     title: "AWT | Advanced Water Technology",
@@ -33,10 +37,10 @@ export const metadata: Metadata = {
     siteName: "AWT | Advanced Water Technology",
     images: [
       {
-        url: "https://adwatertech.com/images/awt_open_graph_Open_img.png",
+        url: "https://adwatertech.com/images/awt_logo.png",
         width: 1200,
         height: 630,
-        alt: "AWT Advanced Water Technology"
+        alt: "AWT Advanced Water Technology logo"
       }
     ]
   },
@@ -45,14 +49,26 @@ export const metadata: Metadata = {
     title: "AWT | Advanced Water Technology",
     description:
       "Advanced water treatment solutions based on ECM technology, water reuse, ceramic membrane filtration, phosphorus removal, and sustainable water management.",
-    images: ["https://adwatertech.com/images/awt_open_graph_Open_img.png"]
+    images: ["https://adwatertech.com/images/awt_logo.png"]
   }
+};
+
+const organizationJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  name: "AWT | Advanced Water Technology",
+  url: "https://adwatertech.com",
+  logo: "https://adwatertech.com/images/awt_logo.png"
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
       <body>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }}
+        />
         <GoogleAnalytics />
         <Header />
         <main>{children}</main>

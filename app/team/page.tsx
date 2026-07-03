@@ -20,14 +20,14 @@ export const metadata: Metadata = {
     description:
       "Meet the AWT leadership team behind ECM technology development, engineering, finance, partnerships, and global project strategy.",
     url: "https://adwatertech.com/team/",
-    images: ["https://adwatertech.com/images/awt_open_graph_Open_img.png"]
+    images: ["https://adwatertech.com/images/awt_logo.png"]
   },
   twitter: {
     card: "summary_large_image",
     title: "Team | AWT Leadership",
     description:
       "Meet the AWT leadership team behind ECM technology development, engineering, finance, partnerships, and global project strategy.",
-    images: ["https://adwatertech.com/images/awt_open_graph_Open_img.png"]
+    images: ["https://adwatertech.com/images/awt_logo.png"]
   }
 };
 

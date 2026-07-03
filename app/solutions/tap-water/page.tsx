@@ -23,14 +23,14 @@ export const metadata: Metadata = {
     description:
       "ECM-based tap water purification and surface water treatment solutions using electrocoagulation and ceramic membrane filtration.",
     url: "https://adwatertech.com/solutions/tap-water/",
-    images: ["https://adwatertech.com/images/awt_open_graph_Open_img.png"]
+    images: ["https://adwatertech.com/images/awt_logo.png"]
   },
   twitter: {
     card: "summary_large_image",
     title: "Tap Water Purification | AWT",
     description:
       "ECM-based tap water purification and surface water treatment solutions using electrocoagulation and ceramic membrane filtration.",
-    images: ["https://adwatertech.com/images/awt_open_graph_Open_img.png"]
+    images: ["https://adwatertech.com/images/awt_logo.png"]
   }
 };
 

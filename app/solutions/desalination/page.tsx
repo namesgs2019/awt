@@ -23,14 +23,14 @@ export const metadata: Metadata = {
     description:
       "ECM pretreatment and ceramic membrane filtration for desalination, brine management, and high-salinity water applications.",
     url: "https://adwatertech.com/solutions/desalination/",
-    images: ["https://adwatertech.com/images/awt_open_graph_Open_img.png"]
+    images: ["https://adwatertech.com/images/awt_logo.png"]
   },
   twitter: {
     card: "summary_large_image",
     title: "Desalination Pretreatment | AWT",
     description:
       "ECM pretreatment and ceramic membrane filtration for desalination, brine management, and high-salinity water applications.",
-    images: ["https://adwatertech.com/images/awt_open_graph_Open_img.png"]
+    images: ["https://adwatertech.com/images/awt_logo.png"]
   }
 };
 

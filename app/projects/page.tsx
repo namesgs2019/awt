@@ -22,14 +22,14 @@ export const metadata: Metadata = {
     description:
       "AWT's project pipeline covers global and domestic applications for ECM water treatment, reuse, desalination, and decentralized infrastructure.",
     url: "https://adwatertech.com/projects/",
-    images: ["https://adwatertech.com/images/awt_open_graph_Open_img.png"]
+    images: ["https://adwatertech.com/images/awt_logo.png"]
   },
   twitter: {
     card: "summary_large_image",
     title: "Projects | AWT",
     description:
       "AWT's project pipeline covers global and domestic applications for ECM water treatment, reuse, desalination, and decentralized infrastructure.",
-    images: ["https://adwatertech.com/images/awt_open_graph_Open_img.png"]
+    images: ["https://adwatertech.com/images/awt_logo.png"]
   }
 };
 

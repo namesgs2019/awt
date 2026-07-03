@@ -21,14 +21,14 @@ export const metadata: Metadata = {
     description:
       "Contact AWT for ECM water treatment solutions, pilot applications, partnerships, and project discussions.",
     url: "https://adwatertech.com/contact/",
-    images: ["https://adwatertech.com/images/awt_open_graph_Open_img.png"]
+    images: ["https://adwatertech.com/images/awt_logo.png"]
   },
   twitter: {
     card: "summary_large_image",
     title: "Contact AWT | Advanced Water Technology",
     description:
       "Contact AWT for ECM water treatment solutions, pilot applications, partnerships, and project discussions.",
-    images: ["https://adwatertech.com/images/awt_open_graph_Open_img.png"]
+    images: ["https://adwatertech.com/images/awt_logo.png"]
   }
 };
 

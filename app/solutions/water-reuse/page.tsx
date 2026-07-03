@@ -23,14 +23,14 @@ export const metadata: Metadata = {
     description:
       "ECM-based water reuse and phosphorus removal solutions that improve RO feedwater quality and reduce chemical dependency.",
     url: "https://adwatertech.com/solutions/water-reuse/",
-    images: ["https://adwatertech.com/images/awt_open_graph_Open_img.png"]
+    images: ["https://adwatertech.com/images/awt_logo.png"]
   },
   twitter: {
     card: "summary_large_image",
     title: "Water Reuse & Phosphorus Removal | AWT",
     description:
       "ECM-based water reuse and phosphorus removal solutions that improve RO feedwater quality and reduce chemical dependency.",
-    images: ["https://adwatertech.com/images/awt_open_graph_Open_img.png"]
+    images: ["https://adwatertech.com/images/awt_logo.png"]
   }
 };
 

@@ -24,14 +24,14 @@ export const metadata: Metadata = {
     description:
       "AWT's ECM technology combines electrocoagulation and ceramic membrane filtration for chemical-free water purification and reuse.",
     url: "https://adwatertech.com/ecm-technology/",
-    images: ["https://adwatertech.com/images/awt_open_graph_Open_img.png"]
+    images: ["https://adwatertech.com/images/awt_logo.png"]
   },
   twitter: {
     card: "summary_large_image",
     title: "ECM Technology | AWT",
     description:
       "AWT's ECM technology combines electrocoagulation and ceramic membrane filtration for chemical-free water purification and reuse.",
-    images: ["https://adwatertech.com/images/awt_open_graph_Open_img.png"]
+    images: ["https://adwatertech.com/images/awt_logo.png"]
   }
 };
 
