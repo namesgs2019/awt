@@ -8,8 +8,8 @@ export const dropdownItems = {
     { label: "Pool & Spa", href: "/solutions/pool-spa", status: "available" }
   ],
   projects: [
-    { label: "Global", href: "/projects#global", status: "available" },
-    { label: "Domestic", href: "/projects#domestic", status: "available" },
+    { label: "Global", href: "/projects/global", status: "available" },
+    { label: "Domestic", href: "/projects/domestic", status: "available" },
     {
       label: "CECM Small-Scale Wastewater Treatment System",
       href: "/projects/cecm-small-scale-wastewater-treatment-system",
