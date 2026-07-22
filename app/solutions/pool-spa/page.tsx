@@ -3,7 +3,7 @@ import Link from "next/link";
 import { SectionTitle } from "@/components/SectionTitle";
 
 export const metadata: Metadata = {
-  title: "Pool & Spa Water Purification | AWT ECM Mini",
+  title: "Elysian Pool & Spa Water Purification | AWT ECM Mini",
   description:
     "AWT provides chemical-free pool and spa water purification using ECM Mini, electrocoagulation, ceramic membrane filtration, and closed-loop water recirculation for private pools, indoor facilities, resorts, and wellness environments.",
   keywords: [
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     canonical: "/solutions/pool-spa/"
   },
   openGraph: {
-    title: "Pool & Spa Water Purification | AWT",
+    title: "Elysian Pool & Spa Water Purification | AWT",
     description:
       "Chemical-free pool and spa water purification powered by ECM Mini, combining electrocoagulation, ceramic membrane filtration, and closed-loop recirculation.",
     url: "https://adwatertech.com/solutions/pool-spa/",
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Pool & Spa Water Purification | AWT",
+    title: "Elysian Pool & Spa Water Purification | AWT",
     description:
       "Chemical-free pool and spa water purification powered by ECM Mini, combining electrocoagulation, ceramic membrane filtration, and closed-loop recirculation.",
     images: ["https://adwatertech.com/images/awt_logo.png"]
@@ -257,7 +257,7 @@ export default function PoolSpaPage() {
     <>
       <section className="page-hero solutions-hero hero-bg-solutions">
         <p>Solutions</p>
-        <h1>Pool & Spa</h1>
+        <h1>Elysian Pool & Spa</h1>
         <p>
           Chemical-free pool and spa water purification for private residences, indoor facilities, and resort-scale
           applications - powered by ECM Mini. No chlorine, no plastics, and zero water discharged through continuous
