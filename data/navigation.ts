@@ -18,7 +18,8 @@ export const dropdownItems = {
   ],
   insights: [
     { label: "Journal", href: "/insights/journal", status: "available" },
-    { label: "Resources", href: "/insights/resources", status: "available" }
+    { label: "Resources", href: "/insights/resources", status: "available" },
+    { label: "News", href: "/insights/news", status: "available" }
   ],
   partnership: [
     { label: "Impact Investors", href: "/partnership#impact-investors", status: "available" },

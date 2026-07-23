@@ -3,9 +3,11 @@ import type { BloggerApiPost, BloggerApiResponse, NormalizedBloggerPost } from "
 const BLOGGER_API_BASE = "https://www.googleapis.com/blogger/v3/blogs";
 const JOURNAL_LABELS = ["journal", "Journal"];
 const RESOURCE_LABELS = ["resources", "Resources"];
-const JOURNAL_PREFIX_PATTERN = /^\s*\[(?:journal|resources?|awt_journal|awt_resources?)\]\s*/i;
+const NEWS_LABELS = ["news", "News"];
+const JOURNAL_PREFIX_PATTERN = /^\s*\[(?:journal|news|resources?|awt_journal|awt_news|awt_resources?)\]\s*/i;
 const FALLBACK_ERROR_MESSAGE = "Journal updates are temporarily delayed. Existing posts remain available.";
 const RESOURCES_FALLBACK_MESSAGE = "Resources are being updated. Please check back soon.";
+const NEWS_FALLBACK_MESSAGE = "News posts are being updated. Please check back soon.";
 
 function getBloggerConfig() {
   return {
@@ -191,6 +193,10 @@ export async function getBloggerResourcePosts() {
   return getBloggerPostsForLabels(RESOURCE_LABELS);
 }
 
+export async function getBloggerNewsPosts() {
+  return getBloggerPostsForLabels(NEWS_LABELS);
+}
+
 async function getBloggerPostsForLabels(labels: string[]) {
   const seen = new Set<string>();
   const posts: NormalizedBloggerPost[] = [];
@@ -222,6 +228,11 @@ export async function getBloggerResourceBySlug(slug: string) {
   return posts.find((post) => post.slug === slug) || null;
 }
 
+export async function getBloggerNewsBySlug(slug: string) {
+  const posts = await getBloggerNewsPosts();
+  return posts.find((post) => post.slug === slug) || null;
+}
+
 export function formatBloggerDate(value: string) {
   if (!value) {
     return "Date not provided";
@@ -234,4 +245,4 @@ export function formatBloggerDate(value: string) {
   }).format(new Date(value));
 }
 
-export { FALLBACK_ERROR_MESSAGE, RESOURCES_FALLBACK_MESSAGE };
+export { FALLBACK_ERROR_MESSAGE, RESOURCES_FALLBACK_MESSAGE, NEWS_FALLBACK_MESSAGE };
