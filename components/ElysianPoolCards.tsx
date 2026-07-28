@@ -4,7 +4,9 @@ import { useEffect, useMemo, useState } from "react";
 
 type ElysianCard = {
   image: string;
+  modalImage: string;
   alt: string;
+  partLabel: string;
   title: string;
   summary: string;
   subtitle: string;
@@ -21,7 +23,9 @@ type ElysianCard = {
 const elysianCards: ElysianCard[] = [
   {
     image: "/images/solutions/elysian1.png",
+    modalImage: "/images/solutions/elysian1_big.png",
     alt: "Elysian chemical-free private pool water purification concept",
+    partLabel: "ELYSIAN · PART 1 OF 4",
     title: "Open Your Eyes Underwater. Feel Nothing But Water.",
     summary: "Water pure enough to open your eyes in - chemical-free purification for private wellness pools.",
     subtitle: "A private pool experience without the sting, smell, or compromise.",
@@ -37,7 +41,9 @@ const elysianCards: ElysianCard[] = [
   },
   {
     image: "/images/solutions/elysian2.png",
+    modalImage: "/images/solutions/elysian2_big.png",
     alt: "Elysian residential indoor and outdoor luxury lifestyle pool concept",
+    partLabel: "ELYSIAN · PART 2 OF 4",
     title: "Residential Indoor Pool / Luxury Lifestyle Pool",
     summary: "Invisible by design - Elysian disappears into private architecture, indoors and outdoors.",
     subtitle: "Invisible by design, indoors and outdoors.",
@@ -53,7 +59,9 @@ const elysianCards: ElysianCard[] = [
   },
   {
     image: "/images/solutions/elysian3.png",
+    modalImage: "/images/solutions/elysian3_big.png",
     alt: "Elysian AOP electro-coagulation and ceramic membrane closed-loop process concept",
+    partLabel: "ELYSIAN · PART 3 OF 4",
     title: "How Elysian Works - Three Core Stages",
     summary:
       "AOP, Electro-Coagulation, and Ceramic Membrane Filtration work together in a continuous closed-loop cycle.",
@@ -86,7 +94,9 @@ const elysianCards: ElysianCard[] = [
   },
   {
     image: "/images/solutions/elysian4.png",
+    modalImage: "/images/solutions/elysian4_big.png",
     alt: "Elysian private pool ownership chemical-dosing-free water concept",
+    partLabel: "ELYSIAN · PART 4 OF 4",
     title: "Why Private Ownership Changes Everything",
     summary:
       "Private pool ownership may offer the clearest path to chemical-dosing-free water, subject to local regulations.",
@@ -164,11 +174,14 @@ export function ElysianPoolCards() {
             >
               X
             </button>
-            <div className="elysian-modal-media">
-              <img src={activeCard.image} alt={activeCard.alt} />
-            </div>
+            <div
+              className="elysian-modal-media"
+              role="img"
+              aria-label={activeCard.alt}
+              style={{ backgroundImage: `url(${activeCard.modalImage})` }}
+            />
             <div className="elysian-modal-content">
-              <span className="pool-mini-badge">ELYSIAN</span>
+              <span className="elysian-modal-label">{activeCard.partLabel}</span>
               <h2 id="elysian-modal-title">{activeCard.title}</h2>
               <p className="elysian-modal-subtitle">{activeCard.subtitle}</p>
               <p>{activeCard.body}</p>
