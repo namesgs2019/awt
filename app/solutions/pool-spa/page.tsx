@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { ElysianPoolCards } from "@/components/ElysianPoolCards";
 import { SectionTitle } from "@/components/SectionTitle";
 
 export const metadata: Metadata = {
-  title: "Elysian Pool & Spa Water Purification | AWT ECM Mini",
+  title: "Elysian Pool & Spa | AWT Advanced Water Technology",
   description:
-    "AWT provides chemical-free pool and spa water purification using ECM Mini, electrocoagulation, ceramic membrane filtration, and closed-loop water recirculation for private pools, indoor facilities, resorts, and wellness environments.",
+    "Elysian Pool & Spa delivers chemical-free pool and spa water purification for private residences and estate-scale wellness environments using AOP, electro-coagulation, ceramic membrane filtration, and closed-loop recirculation.",
   keywords: [
     "pool water purification",
     "spa water treatment",
@@ -22,17 +23,17 @@ export const metadata: Metadata = {
     canonical: "/solutions/pool-spa/"
   },
   openGraph: {
-    title: "Elysian Pool & Spa Water Purification | AWT",
+    title: "Elysian Pool & Spa | AWT Advanced Water Technology",
     description:
-      "Chemical-free pool and spa water purification powered by ECM Mini, combining electrocoagulation, ceramic membrane filtration, and closed-loop recirculation.",
+      "Elysian Pool & Spa delivers chemical-free pool and spa water purification using AOP, electro-coagulation, ceramic membrane filtration, and closed-loop recirculation.",
     url: "https://adwatertech.com/solutions/pool-spa/",
     images: ["https://adwatertech.com/images/awt_logo.png"]
   },
   twitter: {
     card: "summary_large_image",
-    title: "Elysian Pool & Spa Water Purification | AWT",
+    title: "Elysian Pool & Spa | AWT Advanced Water Technology",
     description:
-      "Chemical-free pool and spa water purification powered by ECM Mini, combining electrocoagulation, ceramic membrane filtration, and closed-loop recirculation.",
+      "Elysian Pool & Spa delivers chemical-free pool and spa water purification using AOP, electro-coagulation, ceramic membrane filtration, and closed-loop recirculation.",
     images: ["https://adwatertech.com/images/awt_logo.png"]
   }
 };
@@ -49,61 +50,34 @@ type PoolIconName =
 
 const heroTags = [
   "Chemical-free Treatment",
-  "ECM Mini",
+  "Elysian",
   "Pool Water Purification",
   "Closed-loop Recirculation",
   "Ceramic Membrane",
   "Water Reuse"
 ];
 
-const galleryItems = [
-  {
-    image: "/images/solutions/Pool_indoor.jpg",
-    category: "Private Pool (Indoor)",
-    title: "Residential Indoor Pool",
-    description: "Enclosed space - Chemical-free purification"
-  },
-  {
-    image: "/images/solutions/Pool_lap.jpg",
-    category: "Lap & Fitness Pool",
-    title: "Athletic & Training Pool",
-    description: "Daily use - Skin-safe water for swimmers"
-  },
-  {
-    image: "/images/solutions/Pool_spa.jpg",
-    category: "Resort & Spa",
-    title: "Resort-Scale Outdoor Pool",
-    description: "Large volume - Zero chemical dosing"
-  },
-  {
-    image: "/images/solutions/Pool_outdoor.jpg",
-    category: "Private Pool (Outdoor)",
-    title: "Luxury Lifestyle Pool",
-    description: "Wellness-driven - Closed-loop water recirculation"
-  }
-];
-
 const processSteps: { image: string; alt: string; title: string; description: string }[] = [
   {
-    image: "/images/solutions/Related_EC.png",
-    alt: "Electrocoagulation process illustration for pool water treatment",
-    title: "Electrocoagulation (EC)",
+    image: "/images/solutions/Related_CWR.png",
+    alt: "Advanced oxidation process stage illustration for Elysian pool water treatment",
+    title: "AOP (Advanced Oxidation Process)",
     description:
-      "Uses low-voltage current to destabilise and aggregate suspended particles, bacteria, and organic contaminants without chemical dosing."
+      "Initiates oxidative reactions that break down fine organic contaminants before closed-loop water reaches the electro-coagulation stage."
+  },
+  {
+    image: "/images/solutions/Related_EC.png",
+    alt: "Electro-coagulation stage illustration for Elysian pool water treatment",
+    title: "Electro-Coagulation (EC)",
+    description:
+      "Low-voltage electrical impulses aggregate suspended contaminants without adding chlorine or conventional chemical dosing."
   },
   {
     image: "/images/solutions/Related_CMF.png",
-    alt: "Ceramic membrane filtration process illustration for pool water treatment",
-    title: "Ceramic Membrane Filtration",
+    alt: "Ceramic membrane filtration stage illustration for Elysian pool water treatment",
+    title: "EM / Ceramic Membrane",
     description:
-      "Durable ceramic membrane filtration removes remaining solids and helps maintain cleaner, clearer pool water quality."
-  },
-  {
-    image: "/images/solutions/Related_CWR.png",
-    alt: "Closed-loop water recirculation process illustration for pool water reuse",
-    title: "Closed-loop Water Recirculation",
-    description:
-      "Purified water is continuously recirculated to reduce water loss and support efficient, sustainable pool operation."
+      "Ceramic membrane filtration forms the physical barrier, polishing water before continuous closed-loop recirculation."
   }
 ];
 
@@ -260,7 +234,7 @@ export default function PoolSpaPage() {
         <h1>Elysian Pool & Spa</h1>
         <p>
           Chemical-free pool and spa water purification for private residences, indoor facilities, and resort-scale
-          applications - powered by ECM Mini. No chlorine, no plastics, and zero water discharged through continuous
+          applications - powered by Elysian A-ECM. No chlorine, no plastics, and zero water discharged through continuous
           closed-loop recirculation.
         </p>
         <div className="pill-list hero-pill-list">
@@ -270,24 +244,12 @@ export default function PoolSpaPage() {
 
       <section className="band solution-menu-stack pool-category-band">
         <article className="solution-menu-section anchor-card">
-          <div className="grid four pool-gallery-grid">
-            {galleryItems.map((item) => (
-              <article className="card pool-photo-card" key={item.title}>
-                <img src={item.image} alt={item.title} />
-                <div className="pool-photo-card-body">
-                  <span className="pool-card-category">{item.category}</span>
-                  <h3>{item.title}</h3>
-                  <p>{item.description}</p>
-                  <span className="pool-mini-badge">ECM MINI</span>
-                </div>
-              </article>
-            ))}
-          </div>
+          <ElysianPoolCards />
 
           <div className="solution-related-panel pool-intro-panel">
             <p>
-              ECM Mini applies the same advanced electrocoagulation and ceramic membrane technology used in industrial
-              water treatment - optimized for modern pool and spa environments.
+              Elysian applies AOP, electro-coagulation, and ceramic membrane filtration in a continuous closed-loop
+              cycle - optimized for private pool and spa environments.
             </p>
           </div>
         </article>
@@ -323,7 +285,7 @@ export default function PoolSpaPage() {
       <section className="band soft">
         <div className="pool-decision-grid">
           <div className="pool-comparison-column">
-            <SectionTitle title="Why ECM for Pools?" />
+            <SectionTitle title="Why Elysian for Pools?" />
             <div className="pool-comparison-card">
               <div className="pool-comparison-table-wrap">
                 <table className="pool-comparison-table">
@@ -331,7 +293,7 @@ export default function PoolSpaPage() {
                     <tr>
                       <th>Category</th>
                       <th>Conventional</th>
-                      <th>ECM Mini</th>
+                      <th>Elysian</th>
                     </tr>
                   </thead>
                   <tbody>
