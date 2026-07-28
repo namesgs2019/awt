@@ -92,7 +92,7 @@ const elysianCards: ElysianCard[] = [
       "Private pool ownership may offer the clearest path to chemical-dosing-free water, subject to local regulations.",
     subtitle: "Chemical-dosing-free water is not only a technology issue. It can also be a regulatory category.",
     body:
-      "Complete freedom from chlorine chemistry is not simply a premium upgrade that can be applied to every pool. In many jurisdictions, public and commercial pools may be required to maintain a minimum chemical disinfectant residual. A privately owned, single-family pool is different because it serves only its owner and invited guests, and may fall outside those same requirements.",
+      "Complete freedom from chlorine chemistry is not simply a premium upgrade you can buy for any pool. In many jurisdictions, public and commercial pools such as hotels, clubs, and community facilities may be required by health codes to maintain a minimum chemical disinfectant residual, regardless of which treatment technology is used. A privately owned, single-family pool is different because it serves only its owner and invited guests, and may fall outside those same requirements.",
     keyPoints: [
       "Private ownership may offer greater treatment flexibility",
       "Public and commercial pools may be subject to local health-code requirements",
@@ -101,7 +101,7 @@ const elysianCards: ElysianCard[] = [
     ],
     quote:
       "Owning a private pool was always a mark of exclusivity. Now, in a growing number of jurisdictions, it is also the only legal path to water this pure.",
-    note: "Subject to local regulations."
+    note: "Concept visualization - AI-generated image, not an actual installed system. Application subject to local regulations."
   }
 ];
 

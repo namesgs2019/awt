@@ -3140,6 +3140,50 @@ h1 {
   margin-bottom: 10px;
 }
 
+.pool-private-panel {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(260px, 0.8fr);
+  gap: clamp(22px, 4vw, 44px);
+  align-items: center;
+  border-color: rgba(24, 167, 199, 0.2);
+  background:
+    radial-gradient(circle at top right, rgba(111, 213, 232, 0.2), rgba(111, 213, 232, 0) 34%),
+    var(--white);
+}
+
+.pool-private-panel .section-eyebrow {
+  margin: 0 0 12px;
+  color: var(--blue);
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.pool-private-panel h2 {
+  margin: 0 0 16px;
+  font-size: clamp(28px, 4vw, 44px);
+  line-height: 1.08;
+}
+
+.pool-private-panel p {
+  margin: 0 0 14px;
+  color: var(--muted);
+  line-height: 1.76;
+}
+
+.pool-private-panel blockquote {
+  margin: 0;
+  border-left: 4px solid var(--cyan);
+  border-radius: 14px;
+  padding: 22px 24px;
+  background: #edf6fb;
+  color: var(--navy);
+  font-size: clamp(18px, 2.2vw, 24px);
+  font-weight: 800;
+  line-height: 1.45;
+}
+
 .pool-decision-grid {
   display: grid;
   grid-template-columns: minmax(0, 1.9fr) minmax(280px, 0.9fr);
@@ -3471,6 +3515,10 @@ textarea {
 
   .elysian-modal-content {
     padding: 28px 22px 30px;
+  }
+
+  .pool-private-panel {
+    grid-template-columns: 1fr;
   }
 }
 

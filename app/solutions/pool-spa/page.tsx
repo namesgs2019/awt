@@ -283,6 +283,28 @@ export default function PoolSpaPage() {
       </section>
 
       <section className="band soft">
+        <article className="card pool-private-panel">
+          <div>
+            <p className="section-eyebrow">Private Ownership</p>
+            <h2>Why Private Ownership Changes Everything</h2>
+            <p>
+              Complete freedom from chlorine chemistry is not simply a premium upgrade you can buy for any pool. In
+              many jurisdictions, public and commercial pools may be required by health codes to maintain a minimum
+              chemical disinfectant residual, regardless of which treatment technology is used.
+            </p>
+            <p>
+              A privately owned, single-family pool is different: because it serves only its owner and invited guests,
+              it may fall outside those same requirements. Elysian was engineered specifically for that category.
+            </p>
+          </div>
+          <blockquote>
+            Owning a private pool was always a mark of exclusivity. Now, in a growing number of jurisdictions, it is
+            also the only legal path to water this pure.
+          </blockquote>
+        </article>
+      </section>
+
+      <section className="band soft">
         <div className="pool-decision-grid">
           <div className="pool-comparison-column">
             <SectionTitle title="Why Elysian for Pools?" />
