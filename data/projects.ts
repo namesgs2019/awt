@@ -81,7 +81,7 @@ export const projects: Project[] = [
       "The goal is to reduce chemical dependency, improve membrane operation, reduce brine generation, and maximize water reuse efficiency."
     ],
     areas: ["Industrial wastewater treatment", "Factory effluent reuse", "Municipal wastewater reuse", "Water reuse for industrial-grade water", "Sites requiring reduced discharge volume"],
-    values: ["Chemical-free or chemical-reduced treatment process", "Improved RO feedwater quality", "Reduced fouling load", "Higher water reuse efficiency", "Reduced sludge and secondary pollution burden"],
+    values: ["Chemical-reducing treatment process", "Improved RO feedwater quality", "Reduced fouling load", "Higher water reuse efficiency", "Reduced sludge and secondary pollution burden"],
     technologies: ["Electro-coagulation", "Ceramic membrane", "Reverse osmosis pretreatment", "Activated carbon filtration", "Sludge dehydration"]
   },
   {

@@ -16,7 +16,12 @@ export const metadata: Metadata = {
     "AWT"
   ],
   alternates: {
-    canonical: "/solutions/water-reuse/"
+    canonical: "/solutions/water-reuse/",
+    languages: {
+      en: "/solutions/water-reuse/",
+      ko: "/ko/solutions/water-reuse/",
+      "x-default": "/solutions/water-reuse/"
+    }
   },
   openGraph: {
     title: "Water Reuse & Phosphorus Removal | AWT",

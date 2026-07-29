@@ -19,7 +19,12 @@ export const metadata: Metadata = {
     "pool water purification"
   ],
   alternates: {
-    canonical: "/solutions/"
+    canonical: "/solutions/",
+    languages: {
+      en: "/solutions/",
+      ko: "/ko/solutions/",
+      "x-default": "/solutions/"
+    }
   },
   openGraph: {
     title: "Solutions | AWT ECM Water Treatment",

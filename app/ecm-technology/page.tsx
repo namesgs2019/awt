@@ -4,43 +4,48 @@ import { SectionTitle } from "@/components/SectionTitle";
 import { assetPath } from "@/lib/assetPath";
 
 export const metadata: Metadata = {
-  title: "ECM Technology | AWT",
+  title: "ECM Water Treatment Technology | AWT",
   description:
-    "Explore AWT's ECM technology platform combining electrocoagulation, ceramic membrane filtration, water reuse optimization, and AI-based autonomous operation.",
+    "Learn how AWT combines electrocoagulation and ceramic membrane filtration for chemical-reducing water purification, wastewater treatment, water reuse, and RO pretreatment.",
   keywords: [
     "ECM technology",
     "electrocoagulation",
     "ceramic membrane filtration",
-    "chemical-free water treatment",
+    "chemical-reducing water treatment",
     "water reuse optimization",
     "AI water treatment",
     "AWT"
   ],
   alternates: {
-    canonical: "/ecm-technology/"
+    canonical: "/ecm-technology/",
+    languages: {
+      en: "/ecm-technology/",
+      ko: "/ko/ecm-technology/",
+      "x-default": "/ecm-technology/"
+    }
   },
   openGraph: {
-    title: "ECM Technology | AWT",
+    title: "ECM Water Treatment Technology | AWT",
     description:
-      "AWT's ECM technology combines electrocoagulation and ceramic membrane filtration for chemical-free water purification and reuse.",
+      "AWT combines electrocoagulation and ceramic membrane filtration for chemical-reducing water purification, wastewater treatment, water reuse, and RO pretreatment.",
     url: "https://adwatertech.com/ecm-technology/",
     images: ["https://adwatertech.com/images/awt_logo.png"]
   },
   twitter: {
     card: "summary_large_image",
-    title: "ECM Technology | AWT",
+    title: "ECM Water Treatment Technology | AWT",
     description:
-      "AWT's ECM technology combines electrocoagulation and ceramic membrane filtration for chemical-free water purification and reuse.",
+      "AWT combines electrocoagulation and ceramic membrane filtration for chemical-reducing water purification, wastewater treatment, water reuse, and RO pretreatment.",
     images: ["https://adwatertech.com/images/awt_logo.png"]
   }
 };
 
 const ecmSections = [
-  ["What is ECM", "ECM combines electrocoagulation and ceramic membrane filtration to purify and reuse water without relying on chemical coagulants or disposable plastic membranes."],
+  ["What is ECM", "At AWT, ECM means Electrocoagulation + Ceramic Membrane Filtration. It is a water treatment platform for purification, wastewater treatment, water reuse, and pretreatment before reverse osmosis."],
   ["Electrocoagulation", "Electrical reactions aggregate pollutants, suspended solids, and phosphorus-related contaminants so they can be separated more efficiently."],
   ["Ceramic Membrane Filtration", "High-durability ceramic membranes provide stable filtration, high permeability, and efficient backwashing in demanding water conditions."],
   ["AI-Based Autonomous Operation", "AWT applies AI-based monitoring and control concepts to reduce operational complexity and improve process stability."],
-  ["Water Reuse Optimization", "ECM improves RO feedwater quality, reduces fouling burden, and supports lower brine generation in reuse and desalination systems."],
+  ["Water Reuse Optimization", "ECM can improve RO feedwater conditions and reduce fouling burden in reuse and desalination pretreatment systems, subject to source-water testing."],
   ["Materials & Components", "AWT develops ceramic membranes, electrodes, activated carbon, zeolite, alumina, and composite filtration materials for ECM systems."],
   ["Vessel-Integrated Ceramic Membrane Module", "A side-stream vessel-integrated module simplifies installation, expansion, maintenance, and operation for high-performance ceramic membrane systems."]
 ];
@@ -64,7 +69,7 @@ export default function ECMTechnologyPage() {
       <section className="page-hero hero-bg-ecm">
         <p>ECM Technology</p>
         <h1>Electrocoagulation + Ceramic Membrane</h1>
-        <p>AWT's core technology platform for chemical-free water purification, reuse, and advanced pretreatment.</p>
+        <p>AWT's core technology platform for chemical-reducing water purification, reuse, and advanced pretreatment.</p>
       </section>
 
       <section className="band">
@@ -90,6 +95,7 @@ export default function ECMTechnologyPage() {
           ))}
         </div>
       </section>
+
     </>
   );
 }

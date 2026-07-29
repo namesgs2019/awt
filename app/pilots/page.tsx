@@ -16,7 +16,12 @@ export const metadata: Metadata = {
     "surface water purification"
   ],
   alternates: {
-    canonical: "/pilots/"
+    canonical: "/pilots/",
+    languages: {
+      en: "/pilots/",
+      ko: "/ko/pilots/",
+      "x-default": "/pilots/"
+    }
   },
   openGraph: {
     title: "Pilots & Applications | AWT",

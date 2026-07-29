@@ -168,6 +168,8 @@ main {
 .nav-chevron,
 .accordion-chevron {
   display: inline-block;
+  width: 12px;
+  height: 8px;
   font-size: 11px;
   line-height: 1;
   transition: transform 160ms ease;

@@ -24,18 +24,18 @@ const elysianCards: ElysianCard[] = [
   {
     image: "/images/solutions/elysian1.png",
     modalImage: "/images/solutions/elysian1_big.png",
-    alt: "Elysian chemical-free private pool water purification concept",
+    alt: "Elysian reduced chemical-dosing private pool water purification concept",
     partLabel: "ELYSIAN · PART 1 OF 4",
     title: "Open Your Eyes Underwater. Feel Nothing But Water.",
-    summary: "Water pure enough to open your eyes in - chemical-free purification for private wellness pools.",
+    summary: "A reduced chemical-dosing purification concept for private wellness pools.",
     subtitle: "A private pool experience without the sting, smell, or compromise.",
     body:
-      "Elysian delivers chemical-free pool and spa water purification for private residences, indoor facilities, and estate-scale wellness environments. No chlorine. No plastics. No compromise - water pure enough to open your eyes in, sustained through continuous closed-loop recirculation.",
+      "Elysian is designed for pool and spa water purification in private residences, indoor facilities, and estate-scale wellness environments. The system combines advanced oxidation, electro-coagulation, and ceramic membrane filtration to reduce reliance on conventional chemical dosing while supporting continuous closed-loop recirculation.",
     keyPoints: [
-      "Chemical-free purification experience",
+      "Reduced chemical-dosing purification concept",
       "Designed for private residential wellness pools",
       "Supports clear, comfortable water quality",
-      "Sustained through closed-loop recirculation"
+      "Supported through closed-loop recirculation"
     ],
     note: "Concept visualization - AI-generated image, not an actual installed system."
   },
@@ -67,7 +67,7 @@ const elysianCards: ElysianCard[] = [
       "AOP, Electro-Coagulation, and Ceramic Membrane Filtration work together in a continuous closed-loop cycle.",
     subtitle: "AOP + EC + EM in one continuous closed-loop cycle.",
     body:
-      "Elysian's A-ECM platform purifies pool and spa water through three sequential stages, continuously recirculated in a closed loop.",
+      "Elysian's treatment platform purifies pool and spa water through three sequential stages, continuously recirculated in a closed loop.",
     stages: [
       {
         title: "AOP (Advanced Oxidation Process)",
@@ -77,17 +77,17 @@ const elysianCards: ElysianCard[] = [
       {
         title: "EC (Electro-Coagulation)",
         description:
-          "Microscopic electrical impulses bind together suspended contaminants - no chemical dosing required."
+          "Microscopic electrical impulses bind together suspended contaminants to reduce reliance on conventional chemical dosing."
       },
       {
         title: "EM (Ceramic Membrane Filtration / Ultrafiltration)",
         description:
-          "A dense ceramic membrane physically filters out the coagulated solids - a chemical-free physical barrier."
+          "A dense ceramic membrane physically filters out coagulated solids as a durable filtration barrier."
       }
     ],
     keyPoints: [
       "Three-stage purification architecture",
-      "No chemical dosing required in the Elysian treatment process",
+      "Designed to reduce conventional chemical dosing in suitable private-pool conditions",
       "Ceramic membrane physical barrier",
       "Continuous closed-loop recirculation"
     ]

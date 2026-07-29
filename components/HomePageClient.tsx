@@ -22,7 +22,8 @@ export function HomePageClient() {
   const heroIntro = home.heroIntro;
   const heroVideoCta = home.heroVideoCta;
   const coreTitle = "Core Message";
-  const coreDescription = "This section remains unchanged from the current homepage. The four feature cards are retained as-is.";
+  const coreDescription =
+    "AWT connects electrocoagulation, ceramic membrane filtration, water reuse optimization, and AI-based operation into one ECM technology platform.";
 
   useEffect(() => {
     if (!isVideoOpen) return;
@@ -43,7 +44,7 @@ export function HomePageClient() {
         <Image src={assetPath("/images/awt-hero-water-technology.png")} alt="Advanced water treatment facility" fill priority />
         <div className="hero-overlay" />
         <div className="hero-content">
-          <h1 className="sr-only">Advanced Water Technology for Chemical-free Water Treatment</h1>
+          <h1 className="sr-only">Advanced Water Technology Powered by ECM Water Treatment</h1>
           <p>Advanced Water Technology</p>
           <strong className="hero-highlight">{heroHighlight}</strong>
           {heroIntro.map((paragraph) => (

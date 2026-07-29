@@ -9,12 +9,12 @@ const aboutBlocks = [
   {
     title: "Our Technology",
     body:
-      "AWT's ECM system integrates electrocoagulation with high-performance ceramic membrane filtration to deliver chemical-free, high-efficiency water treatment — without disposable plastic membranes, without chemical coagulants, and with significantly lower energy consumption than conventional systems."
+      "AWT's ECM system integrates electrocoagulation with high-performance ceramic membrane filtration to support chemical-reducing, high-efficiency water treatment with reduced reliance on disposable plastic membranes and chemical coagulants."
   },
   {
     title: "Where We Work",
     body:
-      "We develop water infrastructure solutions for water-stressed regions across Central Asia, Southeast Asia, Sub-Saharan Africa, and the Pacific — markets where water security is a critical challenge and where ECM technology delivers the most transformative impact."
+      "We develop water infrastructure solutions for water-stressed regions across Central Asia, Southeast Asia, Sub-Saharan Africa, and the Pacific — markets where water security is a critical challenge and ECM technology can deliver meaningful impact."
   },
   {
     title: "Who We Work With",

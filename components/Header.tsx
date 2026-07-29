@@ -9,6 +9,14 @@ import { navItems } from "@/data/site";
 
 const dropdownKeys = new Set(["solutions", "projects", "insights"]);
 
+function ChevronIcon({ className }: { className: string }) {
+  return (
+    <svg className={className} viewBox="0 0 12 8" aria-hidden="true" focusable="false">
+      <path d="M1.5 1.5 6 6l4.5-4.5" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
+    </svg>
+  );
+}
+
 export function Header() {
   const [open, setOpen] = useState(false);
   const [expanded, setExpanded] = useState<DropdownKey | null>(null);
@@ -56,6 +64,7 @@ export function Header() {
             const hasDropdown = dropdownKeys.has(item.key);
             const key = item.key as DropdownKey;
             const isOpen = activeDropdown === key;
+            const dropdownId = hasDropdown ? `nav-dropdown-${key}` : undefined;
 
             return (
               <div
@@ -69,12 +78,14 @@ export function Header() {
                   href={item.href}
                   onFocus={() => (hasDropdown ? setActiveDropdown(key) : setActiveDropdown(null))}
                   onClick={() => setActiveDropdown(null)}
+                  aria-expanded={hasDropdown ? isOpen : undefined}
+                  aria-controls={dropdownId}
                 >
                   <span>{item.label}</span>
-                  {hasDropdown ? <span className={isOpen ? "nav-chevron open" : "nav-chevron"}>v</span> : null}
+                  {hasDropdown ? <ChevronIcon className={isOpen ? "nav-chevron open" : "nav-chevron"} /> : null}
                 </Link>
                 {hasDropdown ? (
-                  <div className={isOpen ? "dropdown-panel open" : "dropdown-panel"}>
+                  <div className={isOpen ? "dropdown-panel open" : "dropdown-panel"} id={dropdownId}>
                     {dropdownItems[key].map((child) =>
                       (child.status as string) === "soon" ? (
                         <span key={child.href} className="dropdown-link disabled" aria-disabled="true">
@@ -114,6 +125,7 @@ export function Header() {
         {navItems.map((item) => {
           const hasDropdown = dropdownKeys.has(item.key);
           const key = item.key as DropdownKey;
+          const mobileDropdownId = hasDropdown ? `mobile-dropdown-${key}` : undefined;
 
           if (!hasDropdown) {
             return (
@@ -129,11 +141,12 @@ export function Header() {
                 type="button"
                 onClick={() => setExpanded((value) => (value === key ? null : key))}
                 aria-expanded={expanded === key}
+                aria-controls={mobileDropdownId}
               >
                 {item.label}
-                <span className={expanded === key ? "accordion-chevron open" : "accordion-chevron"}>v</span>
+                <ChevronIcon className={expanded === key ? "accordion-chevron open" : "accordion-chevron"} />
               </button>
-              <div className={expanded === key ? "mobile-submenu open" : "mobile-submenu"}>
+              <div className={expanded === key ? "mobile-submenu open" : "mobile-submenu"} id={mobileDropdownId}>
                 {dropdownItems[key].map((child) =>
                   (child.status as string) === "soon" ? (
                     <span key={child.href} className="mobile-submenu-item disabled" aria-disabled="true">

@@ -1,4 +1,4 @@
-export const v2Home = {
+﻿export const v2Home = {
   heroTitle: "Advanced Water Technology",
   heroHighlight: "By drastically reducing the use of chemicals and plastics",
   heroIntro: [
@@ -9,7 +9,7 @@ export const v2Home = {
   ],
   heroVideoCta: "Filtration and backwashing of ceramic membranes in an MBR tank with an MLSS concentration of 12,000 mg/L",
   heroCopy: [
-    "AWT's ECM (Electrocoagulation + Ceramic Membrane) technology delivers chemical-free, AI-optimized water purification and reuse without disposable plastic membranes or chemical coagulants.",
+    "AWT's ECM (Electrocoagulation + Ceramic Membrane) technology supports chemical-reducing, AI-optimized water purification and reuse with reduced reliance on disposable plastic membranes and chemical coagulants.",
     "From South Korean smart cities to Central Asian desalination, from Southeast Asian industrial wastewater to Sub-Saharan African new city infrastructure, AWT scales ECM technology where it matters most."
   ],
   primaryCta: "Explore Technology",
@@ -21,7 +21,8 @@ export const v2Home = {
     ["3", "Tech Ventures"]
   ],
   coreTitle: "Core Message",
-  coreDescription: "This section remains unchanged from the current homepage. The four feature cards are retained as-is.",
+  coreDescription:
+    "AWT connects electrocoagulation, ceramic membrane filtration, water reuse optimization, and AI-based operation into one ECM technology platform.",
   solutionsTitle: "Solutions Across Water Infrastructure",
   projectsTitle: "Global and Domestic Project Pipeline",
   partnershipTitle: "Partnership Models for Scalable Water Security",
@@ -35,7 +36,6 @@ export const v2CoreFeatures = [
   ["Water Reuse Optimization", "ECM improves RO feedwater quality and reduces brine generation."],
   ["AI-Based Autonomous Operation", "AI-driven monitoring and control supports optimized, self-operating water systems."]
 ];
-
 export const v2Solutions = [
   {
     title: "Tap Water",
@@ -49,7 +49,7 @@ export const v2Solutions = [
   },
   {
     title: "Industrial Wastewater",
-    summary: "Industrial WTS, oil sands produced water, livestock wastewater, plasma zero discharge, and pilot applications.",
+    summary: "Industrial WTS, oil sands produced water, livestock wastewater, plasma wastewater treatment, and pilot applications.",
     points: ["Industrial WTS", "OSPW", "Livestock", "Plasma Zero Discharge", "Pilot"]
   },
   {

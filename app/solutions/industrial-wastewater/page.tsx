@@ -10,13 +10,18 @@ export const metadata: Metadata = {
     "wastewater reuse",
     "oil sands produced water",
     "livestock wastewater",
-    "zero discharge",
+    "plasma wastewater treatment",
     "ECM technology",
     "ceramic membrane filtration",
     "AWT"
   ],
   alternates: {
-    canonical: "/solutions/industrial-wastewater/"
+    canonical: "/solutions/industrial-wastewater/",
+    languages: {
+      en: "/solutions/industrial-wastewater/",
+      ko: "/ko/solutions/industrial-wastewater/",
+      "x-default": "/solutions/industrial-wastewater/"
+    }
   },
   openGraph: {
     title: "Industrial Wastewater Treatment | AWT",

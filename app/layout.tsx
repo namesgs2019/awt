@@ -5,24 +5,17 @@ import { Footer } from "@/components/Footer";
 import { GoogleAnalytics } from "@/components/GoogleAnalytics";
 
 export const metadata: Metadata = {
-  title: "AWT | Advanced Water Technology",
+  title: "AWT | ECM Water Treatment & Water Reuse Technology",
   description:
-    "AWT provides advanced water treatment solutions based on ECM technology, ceramic membrane filtration, water reuse, phosphorus removal, and sustainable water management.",
-  keywords: [
-    "advanced water technology",
-    "water treatment",
-    "ECM technology",
-    "electro-coagulation",
-    "ceramic membrane",
-    "water reuse",
-    "phosphorus removal",
-    "wastewater treatment",
-    "sustainable water management",
-    "AWT"
-  ],
+    "AWT develops ECM water treatment systems combining electrocoagulation and ceramic membrane filtration for industrial water, wastewater, water reuse, RO pretreatment, pools, and spas.",
   metadataBase: new URL("https://adwatertech.com"),
   alternates: {
-    canonical: "/"
+    canonical: "/",
+    languages: {
+      en: "/",
+      ko: "/ko/",
+      "x-default": "/"
+    }
   },
   icons: {
     icon: "/favicon.ico",
@@ -30,9 +23,9 @@ export const metadata: Metadata = {
   },
   openGraph: {
     type: "website",
-    title: "AWT | Advanced Water Technology",
+    title: "AWT | ECM Water Treatment & Water Reuse Technology",
     description:
-      "Advanced water treatment solutions based on ECM technology, water reuse, ceramic membrane filtration, phosphorus removal, and sustainable water management.",
+      "AWT develops ECM water treatment systems combining electrocoagulation and ceramic membrane filtration for industrial water, wastewater, water reuse, RO pretreatment, pools, and spas.",
     url: "https://adwatertech.com",
     siteName: "AWT | Advanced Water Technology",
     images: [
@@ -48,7 +41,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "AWT | Advanced Water Technology",
     description:
-      "Advanced water treatment solutions based on ECM technology, water reuse, ceramic membrane filtration, phosphorus removal, and sustainable water management.",
+      "AWT develops ECM water treatment systems combining electrocoagulation and ceramic membrane filtration for industrial water, wastewater, water reuse, RO pretreatment, pools, and spas.",
     images: ["https://adwatertech.com/images/awt_logo.png"]
   }
 };
@@ -56,9 +49,36 @@ export const metadata: Metadata = {
 const organizationJsonLd = {
   "@context": "https://schema.org",
   "@type": "Organization",
-  name: "AWT | Advanced Water Technology",
+  "@id": "https://adwatertech.com/#organization",
+  name: "AWT",
+  alternateName: "Advanced Water Technology",
   url: "https://adwatertech.com",
-  logo: "https://adwatertech.com/images/awt_logo.png"
+  logo: "https://adwatertech.com/images/awt_logo.png",
+  description:
+    "AWT (Advanced Water Technology) develops ECM-based water treatment systems that combine electrocoagulation and ceramic membrane filtration for water purification, industrial water, wastewater treatment, water reuse, desalination pretreatment, and pool and spa applications.",
+  knowsAbout: [
+    "ECM water treatment",
+    "Electrocoagulation",
+    "Ceramic membrane filtration",
+    "Industrial water treatment",
+    "Industrial wastewater treatment",
+    "Water reuse",
+    "RO pretreatment",
+    "Pool and spa water treatment"
+  ]
+};
+
+const websiteJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "@id": "https://adwatertech.com/#website",
+  name: "AWT",
+  alternateName: "Advanced Water Technology",
+  url: "https://adwatertech.com",
+  publisher: {
+    "@id": "https://adwatertech.com/#organization"
+  },
+  inLanguage: "en"
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
@@ -67,7 +87,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body>
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }}
+          dangerouslySetInnerHTML={{ __html: JSON.stringify([organizationJsonLd, websiteJsonLd]) }}
         />
         <GoogleAnalytics />
         <Header />

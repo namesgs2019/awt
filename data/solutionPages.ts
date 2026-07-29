@@ -50,10 +50,10 @@ export const solutionPages: SolutionPageData[] = [
   {
     slug: "industrial-wastewater",
     title: "Industrial Wastewater",
-    summary: "Industrial WTS, oil sands produced water, livestock wastewater, plasma zero discharge, and pilot applications.",
+    summary: "Industrial WTS, oil sands produced water, livestock wastewater, plasma wastewater treatment, and pilot applications.",
     points: ["Industrial WTS", "OSPW", "Livestock", "Plasma Zero Discharge", "Pilot"],
     intro:
-      "Industrial Wastewater organizes industrial WTS, OSPW, livestock wastewater, plasma zero discharge, and pilot applications around ECM pretreatment and reuse.",
+      "Industrial Wastewater organizes industrial WTS, OSPW, livestock wastewater, plasma wastewater treatment, and pilot applications around ECM pretreatment and reuse.",
     image: {
       src: "/images/solutions/Wastewater-Treatment.png",
       alt: "Wastewater treatment and water reuse process flow diagram"
@@ -82,11 +82,11 @@ export const solutionPages: SolutionPageData[] = [
   },
   {
     slug: "pool-spa",
-    title: "Pool & Spa",
-    summary: "Chemical-free pool and spa water purification powered by compact ECM Mini systems.",
-    points: ["Private Pool", "Lap & Fitness Pool", "Resort & Spa", "ECM Mini"],
+    title: "Elysian Pool & Spa",
+    summary: "Pool and spa water purification concepts using Elysian closed-loop treatment architecture.",
+    points: ["Private Pool", "Indoor Pool", "Resort & Spa", "Elysian"],
     intro:
-      "Chemical-free pool and spa water purification for private residences, indoor facilities, and resort-scale applications — powered by ECM Mini. No chlorine, no plastics, and zero water discharged through continuous closed-loop recirculation."
+      "Elysian Pool & Spa applies AOP, electro-coagulation, and ceramic membrane filtration concepts to private pool, indoor pool, wellness, and spa water purification, with site-specific water testing and local regulation review recommended before application."
   }
 ];
 

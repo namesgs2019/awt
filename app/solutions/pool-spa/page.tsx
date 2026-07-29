@@ -4,15 +4,15 @@ import { ElysianPoolCards } from "@/components/ElysianPoolCards";
 import { SectionTitle } from "@/components/SectionTitle";
 
 export const metadata: Metadata = {
-  title: "Elysian Pool & Spa | AWT Advanced Water Technology",
+  title: "Elysian Pool & Spa Water Purification | AWT",
   description:
-    "Elysian Pool & Spa delivers chemical-free pool and spa water purification for private residences and estate-scale wellness environments using AOP, electro-coagulation, ceramic membrane filtration, and closed-loop recirculation.",
+    "Elysian combines advanced oxidation, electrocoagulation, and ceramic membrane filtration concepts for private pool, indoor pool, resort, wellness, and spa water purification.",
   keywords: [
     "pool water purification",
     "spa water treatment",
-    "chemical-free pool treatment",
-    "chlorine-free pool",
-    "ECM Mini",
+    "private pool water treatment",
+    "indoor pool water treatment",
+    "Elysian Pool & Spa",
     "electrocoagulation",
     "ceramic membrane filtration",
     "closed-loop water recirculation",
@@ -20,20 +20,25 @@ export const metadata: Metadata = {
     "AWT"
   ],
   alternates: {
-    canonical: "/solutions/pool-spa/"
+    canonical: "/solutions/pool-spa/",
+    languages: {
+      en: "/solutions/pool-spa/",
+      ko: "/ko/solutions/pool-spa/",
+      "x-default": "/solutions/pool-spa/"
+    }
   },
   openGraph: {
-    title: "Elysian Pool & Spa | AWT Advanced Water Technology",
+    title: "Elysian Pool & Spa Water Purification | AWT",
     description:
-      "Elysian Pool & Spa delivers chemical-free pool and spa water purification using AOP, electro-coagulation, ceramic membrane filtration, and closed-loop recirculation.",
+      "Elysian combines advanced oxidation, electrocoagulation, and ceramic membrane filtration concepts for private pool, indoor pool, resort, wellness, and spa water purification.",
     url: "https://adwatertech.com/solutions/pool-spa/",
     images: ["https://adwatertech.com/images/awt_logo.png"]
   },
   twitter: {
     card: "summary_large_image",
-    title: "Elysian Pool & Spa | AWT Advanced Water Technology",
+    title: "Elysian Pool & Spa Water Purification | AWT",
     description:
-      "Elysian Pool & Spa delivers chemical-free pool and spa water purification using AOP, electro-coagulation, ceramic membrane filtration, and closed-loop recirculation.",
+      "Elysian combines advanced oxidation, electrocoagulation, and ceramic membrane filtration concepts for private pool, indoor pool, resort, wellness, and spa water purification.",
     images: ["https://adwatertech.com/images/awt_logo.png"]
   }
 };
@@ -49,7 +54,7 @@ type PoolIconName =
   | "energy";
 
 const heroTags = [
-  "Chemical-free Treatment",
+  "Reduced Chemical Dosing",
   "Elysian",
   "Pool Water Purification",
   "Closed-loop Recirculation",
@@ -70,7 +75,7 @@ const processSteps: { image: string; alt: string; title: string; description: st
     alt: "Electro-coagulation stage illustration for Elysian pool water treatment",
     title: "Electro-Coagulation (EC)",
     description:
-      "Low-voltage electrical impulses aggregate suspended contaminants without adding chlorine or conventional chemical dosing."
+      "Low-voltage electrical impulses aggregate suspended contaminants while reducing reliance on conventional chemical dosing."
   },
   {
     image: "/images/solutions/Related_CMF.png",
@@ -84,8 +89,8 @@ const processSteps: { image: string; alt: string; title: string; description: st
 const features: { icon: PoolIconName; title: string; description: string }[] = [
   {
     icon: "chemicalFree",
-    title: "Chemical-free Treatment",
-    description: "No chlorine or chemical dosing for safer pool and spa water."
+    title: "Reduced Chemical Dosing",
+    description: "Designed to reduce direct exposure to conventional pool and spa chemical dosing."
   },
   {
     icon: "clarity",
@@ -94,22 +99,22 @@ const features: { icon: PoolIconName; title: string; description: string }[] = [
   },
   {
     icon: "maintenance",
-    title: "Low Maintenance",
-    description: "Reduces cleaning frequency and simplifies daily operation."
+    title: "Lower-Maintenance Design",
+    description: "Designed to simplify routine operation when site water conditions are suitable."
   },
   {
     icon: "cost",
-    title: "Reduced Chemical Cost",
-    description: "Helps reduce recurring chemical purchasing and handling costs."
+    title: "Reduced Chemical Handling",
+    description: "May reduce recurring chemical handling requirements depending on site conditions."
   },
   {
     icon: "skinEyes",
-    title: "Safe for Skin & Eyes",
-    description: "Gentle and comfortable water experience for swimmers of all ages."
+    title: "Comfort-Oriented Water",
+    description: "Supports a more comfortable swimming experience by reducing direct chemical exposure."
   },
   {
     icon: "compact",
-    title: "Compact ECM MINI",
+    title: "Compact Elysian System",
     description: "Space-saving system design for easier installation in pool facilities."
   },
   {
@@ -125,11 +130,11 @@ const features: { icon: PoolIconName; title: string; description: string }[] = [
 ];
 
 const comparisonRows = [
-  ["Water Treatment", "Chemical dosing", "Chemical-free treatment"],
+  ["Water Treatment", "Chemical dosing", "Reduced chemical dosing"],
   ["Maintenance", "Frequent maintenance", "Lower maintenance"],
   ["Sludge", "Higher sludge generation", "Reduced sludge generation"],
   ["Water Discharge", "Large volume discharge", "Closed-loop recirculation"],
-  ["Health Impact", "Irritation risk", "Safer for skin & eyes"]
+  ["Swimmer Comfort", "Potential irritation from chemical exposure", "Designed for a more comfortable water experience"]
 ];
 
 function PoolIcon({ name }: { name: PoolIconName }) {
@@ -233,9 +238,9 @@ export default function PoolSpaPage() {
         <p>Solutions</p>
         <h1>Elysian Pool & Spa</h1>
         <p>
-          Chemical-free pool and spa water purification for private residences, indoor facilities, and resort-scale
-          applications - powered by Elysian A-ECM. No chlorine, no plastics, and zero water discharged through continuous
-          closed-loop recirculation.
+          Elysian Pool & Spa applies advanced oxidation, electro-coagulation, and ceramic membrane filtration concepts
+          to private residences, indoor facilities, wellness pools, and spa water purification. Site-specific water
+          testing and local regulation review are recommended before application.
         </p>
         <div className="pill-list hero-pill-list">
           {heroTags.map((tag) => <span key={tag}>{tag}</span>)}
@@ -315,7 +320,7 @@ export default function PoolSpaPage() {
                     <tr>
                       <th>Category</th>
                       <th>Conventional</th>
-                      <th>Elysian</th>
+              <th>Elysian</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -333,7 +338,7 @@ export default function PoolSpaPage() {
           </div>
 
           <aside className="pool-cta-panel">
-            <h2>Interested in ECM Mini for your pool?</h2>
+            <h2>Interested in Elysian for your pool?</h2>
             <p>Contact AWT to discuss pilot applications, technical specifications, and partnership opportunities in your market.</p>
             <Link className="primary-link" href="/contact">
               Get in touch {"\u2192"}
