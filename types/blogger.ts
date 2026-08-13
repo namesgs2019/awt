@@ -15,6 +15,7 @@ export type BloggerApiPost = {
 
 export type BloggerApiResponse = {
   items?: BloggerApiPost[];
+  nextPageToken?: string;
 };
 
 export type NormalizedBloggerPost = {

@@ -8,6 +8,8 @@ const JOURNAL_PREFIX_PATTERN = /^\s*\[(?:journal|news|resources?|awt_journal|awt
 const FALLBACK_ERROR_MESSAGE = "Journal updates are temporarily delayed. Existing posts remain available.";
 const RESOURCES_FALLBACK_MESSAGE = "Resources are being updated. Please check back soon.";
 const NEWS_FALLBACK_MESSAGE = "News posts are being updated. Please check back soon.";
+const BLOGGER_PAGE_SIZE = "50";
+const BLOGGER_MAX_PAGES = 10;
 
 function getBloggerConfig() {
   return {
@@ -154,31 +156,49 @@ async function fetchBloggerPostsByLabel(label: string) {
     return [];
   }
 
-  const params = new URLSearchParams({
-    key: apiKey,
-    labels: label,
-    fetchBodies: "true",
-    fetchImages: "true",
-    orderBy: "published",
-    maxResults: "50"
-  });
-  const requestUrl = `${BLOGGER_API_BASE}/${encodeURIComponent(blogId)}/posts?${params.toString()}`;
-
   try {
-    const response = await fetch(requestUrl, {
-      headers: {
-        Referer: "https://adwatertech.com/"
-      },
-      next: { revalidate: 3600 }
-    });
-    if (!response.ok) {
-      const responseText = await response.text().catch(() => "");
-      console.error("Blogger posts fetch failed:", response.status, responseText);
-      return [];
+    const posts: BloggerApiPost[] = [];
+    let pageToken: string | undefined;
+
+    for (let page = 0; page < BLOGGER_MAX_PAGES; page += 1) {
+      const params = new URLSearchParams({
+        key: apiKey,
+        labels: label,
+        fetchBodies: "true",
+        fetchImages: "true",
+        orderBy: "published",
+        maxResults: BLOGGER_PAGE_SIZE
+      });
+
+      if (pageToken) {
+        params.set("pageToken", pageToken);
+      }
+
+      const requestUrl = `${BLOGGER_API_BASE}/${encodeURIComponent(blogId)}/posts?${params.toString()}`;
+      const response = await fetch(requestUrl, {
+        headers: {
+          Referer: "https://adwatertech.com/"
+        },
+        next: { revalidate: 3600 }
+      });
+
+      if (!response.ok) {
+        const responseText = await response.text().catch(() => "");
+        console.error("Blogger posts fetch failed:", response.status, responseText);
+        break;
+      }
+
+      const data = (await response.json()) as BloggerApiResponse;
+      posts.push(...(data.items || []));
+
+      if (!data.nextPageToken) {
+        break;
+      }
+
+      pageToken = data.nextPageToken;
     }
 
-    const data = (await response.json()) as BloggerApiResponse;
-    return (data.items || []).map(normalizeBloggerPost);
+    return posts.map(normalizeBloggerPost);
   } catch (error) {
     console.error("Blogger posts fetch error:", error);
     return [];
