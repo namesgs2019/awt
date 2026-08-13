@@ -9,7 +9,7 @@
   ],
   heroVideoCta: "Filtration and backwashing of ceramic membranes in an MBR tank with an MLSS concentration of 12,000 mg/L",
   heroCopy: [
-    "AWT's ECM (Electrocoagulation + Ceramic Membrane) technology supports chemical-reducing, AI-optimized water purification and reuse with reduced reliance on disposable plastic membranes and chemical coagulants.",
+    "AWT's ECM (Electro-Coagulation + Ceramic Membrane) technology supports chemical-reducing, AI-optimized water purification and reuse with reduced reliance on disposable plastic membranes and chemical coagulants.",
     "From South Korean smart cities to Central Asian desalination, from Southeast Asian industrial wastewater to Sub-Saharan African new city infrastructure, AWT scales ECM technology where it matters most."
   ],
   primaryCta: "Explore Technology",
@@ -125,7 +125,7 @@ export const v2Team = [
     ]
   },
     {
-    name: "Gwi Seop SHIM",
+    name: "Gwi Seop Shim",
     role: "CSO & Co-Founder",
     summary: "Leads business strategy, digital platforms, and technology commercialization.",
     points: [
