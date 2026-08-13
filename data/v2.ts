@@ -90,6 +90,18 @@ export const v2PartnershipTypes = [
 
 export const v2Team = [
   {
+    name: "Sung Yeon Cho",
+    role: "CEO & Co-Founder",
+    summary: "Leads AWT's corporate strategy, business development, partnerships, and overall management.",
+    points: [
+      "25 years of command leadership in operations and mechanized forces",
+      "Strategic planning, organizational leadership, and execution",
+      "Corporate strategy, business development, and partnership leadership",
+      "Real estate investment, project structuring, and asset strategy",
+      "International business development and industrial export commercialization"
+    ]
+  },
+  {
     name: "Dae Gun Kim, Ph.D.",
     role: "CTO & Co-Founder",
     summary: "Inventor of AWT's core ECM technology with more than 20 years of research experience.",
