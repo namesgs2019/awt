@@ -103,7 +103,7 @@ export const v2Team = [
   },
   {
     name: "Lazarus Kim, Ph.D.",
-    role: "CFO & Partner Relations",
+    role: "CFO & Co-Founder",
     summary: "Finance professional supporting global project development and partner relations.",
     points: [
       "Govt. Fund Management & Advisory 15yr",
