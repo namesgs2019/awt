@@ -29,7 +29,7 @@ export function PartnershipPageClient() {
       <section className="page-hero hero-bg-partnership">
         <p>Partnership</p>
         <h1>Partnership & Investors</h1>
-        <p>AWT partners with investors, EPC firms, public-sector organizations, and licensing partners to scale ECM water infrastructure.</p>
+        <p>AWT partners with investors, EPC firms, public-sector organizations, and licensing partners to scale ECM water infrastructure, including MOU-based cooperation in markets such as Vietnam.</p>
       </section>
 
       <section className="band">
@@ -55,7 +55,7 @@ export function PartnershipPageClient() {
         <SectionTitle
           eyebrow="Contact by Type"
           title="Partnership Inquiry Channels"
-          description="Select the channel that best matches your partnership context."
+          description="Select the channel that best matches your partnership, project finance, licensing, or MOU cooperation context."
         />
         <div className="grid three">
           {partnershipContacts.map(([label, email]) => (

@@ -1,4 +1,38 @@
+import type { Metadata } from "next";
 import { SectionTitle } from "@/components/SectionTitle";
+
+export const metadata: Metadata = {
+  title: "About AWT | Advanced Water Technology",
+  description:
+    "Learn about AWT (Advanced Water Technology), a South Korean ECM water treatment company developing electrocoagulation and ceramic membrane systems for water reuse, industrial water, and municipal applications.",
+  keywords: [
+    "AWT",
+    "Advanced Water Technology",
+    "about AWT",
+    "ECM water treatment",
+    "electrocoagulation",
+    "ceramic membrane",
+    "water reuse",
+    "industrial water treatment"
+  ],
+  alternates: {
+    canonical: "/about/"
+  },
+  openGraph: {
+    title: "About AWT | Advanced Water Technology",
+    description:
+      "AWT develops ECM water treatment systems for water reuse, industrial water, and municipal infrastructure applications.",
+    url: "https://adwatertech.com/about/",
+    images: ["https://adwatertech.com/images/awt_logo.png"]
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "About AWT | Advanced Water Technology",
+    description:
+      "AWT develops ECM water treatment systems for water reuse, industrial water, and municipal infrastructure applications.",
+    images: ["https://adwatertech.com/images/awt_logo.png"]
+  }
+};
 
 const aboutBlocks = [
   {

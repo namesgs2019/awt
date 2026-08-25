@@ -31,11 +31,11 @@ export const koreanPages: Record<KoreanPageKey, KoreanPageData> = {
     englishPath: "/",
     title: "AWT ECM 기반 수처리 및 물재이용 기술",
     description:
-      "AWT는 전기응집과 세라믹 멤브레인을 결합한 ECM 기반 수처리 기술로 산업용수, 공업용수, 산업폐수, 물재이용, 담수화 전처리, 수영장 및 스파 물정화 분야를 지원합니다.",
+      "AWT(어드밴스드 워터 테크놀로지)는 전기응집과 세라믹 멤브레인을 결합한 ECM 기반 수처리 기술로 산업용수, 공업용수, 산업폐수, 물재이용, 담수화 전처리, 수영장 및 스파 물정화 분야를 지원합니다.",
     eyebrow: "AWT Korean Overview",
     h1: "AWT ECM 기반 첨단 수처리 및 물재이용 기술",
     intro:
-      "AWT(Advanced Water Technology)는 전기응집과 세라믹 멤브레인을 결합한 ECM 기반 수처리 기술을 개발합니다. 상수처리, 산업용수와 공업용수, 산업폐수, 물재이용, 냉각수 재이용, 담수화 전처리, 수영장 및 스파 물정화 분야에 적용 가능한 수처리 시스템을 제공합니다.",
+      "AWT(Advanced Water Technology, 어드밴스드 워터 테크놀로지)는 전기응집과 세라믹 멤브레인을 결합한 ECM 기반 수처리 기술을 개발합니다. 상수처리, 산업용수와 공업용수, 산업폐수, 물재이용, 냉각수 재이용, 담수화 전처리, 수영장 및 스파 물정화 분야에 적용 가능한 수처리 시스템을 제공합니다.",
     sections: [
       {
         title: "ECM 수처리 기술이란?",
@@ -64,6 +64,13 @@ export const koreanPages: Record<KoreanPageKey, KoreanPageData> = {
           "Elysian Pool & Spa는 개인 수영장, 실내 수영장, 웰니스 풀, 스파 물정화에 적용을 검토할 수 있는 AOP, 전기응집, 세라믹 멤브레인 기반 폐쇄형 순환 처리 개념입니다.",
         href: "/ko/solutions/pool-spa/",
         linkLabel: "수영장 물정화 적용 보기"
+      },
+      {
+        title: "베트남 푸토성 협력과 MOU 기반 프로젝트",
+        body:
+          "AWT는 베트남 푸토성 등 물 인프라 수요가 있는 지역에서 MOU 기반 협력과 수처리·물재이용 프로젝트 가능성을 검토합니다.",
+        href: "/ko/projects/",
+        linkLabel: "프로젝트 협력 보기"
       }
     ]
   },

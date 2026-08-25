@@ -7,7 +7,7 @@ import { GoogleAnalytics } from "@/components/GoogleAnalytics";
 export const metadata: Metadata = {
   title: "AWT | ECM Water Treatment & Water Reuse Technology",
   description:
-    "AWT develops ECM water treatment systems combining electrocoagulation and ceramic membrane filtration for industrial water, wastewater, water reuse, RO pretreatment, pools, and spas.",
+    "AWT (Advanced Water Technology) develops ECM water treatment systems for industrial water, wastewater, water reuse, RO pretreatment, pools, spas, and MOU-based cooperation in markets including Vietnam and Phu Tho Province.",
   metadataBase: new URL("https://adwatertech.com"),
   alternates: {
     canonical: "/",
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     type: "website",
     title: "AWT | ECM Water Treatment & Water Reuse Technology",
     description:
-      "AWT develops ECM water treatment systems combining electrocoagulation and ceramic membrane filtration for industrial water, wastewater, water reuse, RO pretreatment, pools, and spas.",
+      "AWT develops ECM water treatment systems for industrial water, wastewater, water reuse, RO pretreatment, pools, spas, and MOU-based cooperation in markets including Vietnam and Phu Tho Province.",
     url: "https://adwatertech.com",
     siteName: "AWT | Advanced Water Technology",
     images: [
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "AWT | Advanced Water Technology",
     description:
-      "AWT develops ECM water treatment systems combining electrocoagulation and ceramic membrane filtration for industrial water, wastewater, water reuse, RO pretreatment, pools, and spas.",
+      "AWT develops ECM water treatment systems for industrial water, wastewater, water reuse, RO pretreatment, pools, spas, and MOU-based cooperation in markets including Vietnam and Phu Tho Province.",
     images: ["https://adwatertech.com/images/awt_logo.png"]
   }
 };
@@ -55,7 +55,7 @@ const organizationJsonLd = {
   url: "https://adwatertech.com",
   logo: "https://adwatertech.com/images/awt_logo.png",
   description:
-    "AWT (Advanced Water Technology) develops ECM-based water treatment systems that combine electrocoagulation and ceramic membrane filtration for water purification, industrial water, wastewater treatment, water reuse, desalination pretreatment, and pool and spa applications.",
+    "AWT (Advanced Water Technology) develops ECM-based water treatment systems that combine electrocoagulation and ceramic membrane filtration for water purification, industrial water, wastewater treatment, water reuse, desalination pretreatment, pool and spa applications, and MOU-based cooperation in Vietnam and Phu Tho Province.",
   knowsAbout: [
     "ECM water treatment",
     "Electrocoagulation",
@@ -64,7 +64,10 @@ const organizationJsonLd = {
     "Industrial wastewater treatment",
     "Water reuse",
     "RO pretreatment",
-    "Pool and spa water treatment"
+    "Pool and spa water treatment",
+    "Vietnam water cooperation",
+    "Phu Tho Province water infrastructure",
+    "MOU-based project development"
   ]
 };
 

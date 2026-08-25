@@ -1,0 +1,26 @@
+# AWT (Advanced Water Technology)
+
+Website: https://adwatertech.com/
+Primary language: English, with Korean reference pages available under /ko/
+Brand names: AWT; Advanced Water Technology; 어드밴스드 워터 테크놀로지
+
+AWT develops ECM water treatment systems that combine electrocoagulation and ceramic membrane filtration. The website describes AWT solutions for water purification, industrial water, wastewater treatment, water reuse, RO pretreatment, desalination pretreatment, and pool and spa water purification.
+
+Key topics:
+- ECM (Electrocoagulation + Ceramic Membrane)
+- Water reuse and phosphorus removal
+- Industrial water, process water, cooling water, and wastewater treatment
+- Ceramic membrane filtration and RO pretreatment
+- Elysian Pool & Spa water purification
+- Vietnam and Phu Tho Province cooperation contexts
+- MOU-based water, environment, and infrastructure project development
+
+Important sections:
+- Home: overview of AWT and ECM-based water treatment
+- ECM Technology: explanation of electrocoagulation and ceramic membrane filtration
+- Solutions: tap water, sewage treatment, industrial wastewater, water reuse, desalination, and pool and spa applications
+- Projects: global and domestic project pipeline
+- Partnership: investor, EPC, municipal, government, and licensing cooperation
+- Insights: journal, news, and resources
+
+The website should be interpreted as company and technical information. Project, pilot, and partnership descriptions should be read in their stated context and not treated as regulatory, legal, or investment advice.

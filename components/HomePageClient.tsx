@@ -105,7 +105,11 @@ export function HomePageClient() {
       </section>
 
       <section className="band">
-        <SectionTitle eyebrow="Projects" title={home.projectsTitle} description="A ten-project pipeline spanning global outreach and domestic under-discussion opportunities." />
+        <SectionTitle
+          eyebrow="Projects"
+          title={home.projectsTitle}
+          description="A ten-project pipeline spanning global outreach, including Vietnam and Phu Tho Province cooperation contexts, and domestic under-discussion opportunities."
+        />
         <div className="grid four">
           {featuredProjects.map(([region, project, status, category, description]) => (
             <article className="pipeline-card" key={`${region}-${project}`}>
@@ -122,7 +126,11 @@ export function HomePageClient() {
       </section>
 
       <section className="band soft">
-        <SectionTitle eyebrow="Partnership" title={home.partnershipTitle} description="AWT works with finance, engineering, public-sector, and licensing partners to scale ECM systems." />
+        <SectionTitle
+          eyebrow="Partnership"
+          title={home.partnershipTitle}
+          description="AWT works with finance, engineering, public-sector, and licensing partners on ECM systems, MOU-based cooperation, and market development."
+        />
         <div className="grid four">
           {partners.map((partner) => {
             const [title, summary, tags] = partner as [string, string, string[]];
